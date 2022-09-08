@@ -13,6 +13,9 @@
 /unstyled_docs/howtos/client-server.html
 /unstyled_docs/spec/*/unstable.html
 
+# Zola
+/zola/public
+
 /node_modules
 
 # Editors
