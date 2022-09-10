@@ -22,12 +22,6 @@ taxonomies = [
 highlight_code = true
 highlight_theme = "inspired-github"
 
-# Whether to set rel="nofollow" for all external links
-external_links_no_follow = true
-
-# Whether to set rel="noreferrer" for all external links
-external_links_no_referrer = true
-
 [extra]
 twitter_api_bearer_token = "%twitter_secret%"
 
