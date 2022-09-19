@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - Releases</title>
+	<link href="/categories/releases/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="/"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-09-08T07:08:36+00:00</updated>
+	<id>/categories/releases/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Synapse 1.66 released</title>
+		<published>2022-09-05T09:23:27+00:00</published>
+		<updated>2022-09-08T07:08:36+00:00</updated>
+		<link rel="alternate" href="/blog/2022/09/02/synapse-1-66-released/" type="text/html"/>
+		<id>/blog/2022/09/02/synapse-1-66-released/</id>
+		<content type="html">&lt;p&gt;Hey all, we&#x27;ve just released &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;synapse&#x2F;releases&#x2F;tag&#x2F;v1.66.0&quot;&gt;Synapse 1.66&lt;&#x2F;a&gt;! Let&#x27;s have a
+look at what&#x27;s inside this release.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;removal-of-email-verification-delegation&quot;&gt;Removal of email verification delegation&lt;&#x2F;h2&gt;
+&lt;p&gt;Before Synapse 1.66, homeserver administrators had the possibility to
+configure Synapse to delegate verifying email addresses to an identity
+server (using the &lt;code&gt;account_threepid_delegates.email&lt;&#x2F;code&gt; configuration setting).
+This feature relied on old APIs from the Matrix specification that have since
+been &lt;a href=&quot;https:&#x2F;&#x2F;spec.matrix.org&#x2F;v1.3&#x2F;changelog&#x2F;#identity-service-api-1-1&quot;&gt;removed&lt;&#x2F;a&gt; from it.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.org&#x2F;blog&#x2F;2022&#x2F;08&#x2F;03&#x2F;synapse-1-64-released&quot;&gt;Synapse 1.64&lt;&#x2F;a&gt; announced the
+deprecation of this feature, and the addition of a warning at startup when
+the configuration setting is in use.&lt;&#x2F;p&gt;
+&lt;p&gt;As of Synapse 1.66, support for this feature has been fully removed, and
+Synapse will refuse to start if the configuration setting for it is in use.&lt;&#x2F;p&gt;
+&lt;p&gt;If this has not already been done, administrators of servers that were
+previously using this feature are encouraged to configure an SMTP server that
+Synapse can use to verify email addresses on its own. See the
+&lt;a href=&quot;https:&#x2F;&#x2F;matrix-org.github.io&#x2F;synapse&#x2F;v1.66&#x2F;usage&#x2F;configuration&#x2F;config_documentation.html#email&quot;&gt;configuration guide&lt;&#x2F;a&gt;
+for more information.&lt;&#x2F;p&gt;
+&lt;p&gt;Also see the &lt;a href=&quot;https:&#x2F;&#x2F;matrix-org.github.io&#x2F;synapse&#x2F;v1.66&#x2F;upgrade.html#delegation-of-email-validation-no-longer-supported&quot;&gt;upgrade notes&lt;&#x2F;a&gt;
+for more information.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;planned-removal-of-support-for-tcp-replication&quot;&gt;Planned removal of support for TCP replication&lt;&#x2F;h2&gt;
+&lt;p&gt;Most server administrators already know that Synapse can be made to scale
+horizontally by deploying &lt;a href=&quot;https:&#x2F;&#x2F;matrix-org.github.io&#x2F;synapse&#x2F;latest&#x2F;workers.html&quot;&gt;workers&lt;&#x2F;a&gt;. Workers are
+processes running alongside Synapse&#x27;s main process to allow offloading some
+of the work it would otherwise be doing, load balancing some of the traffic,
+etc.&lt;&#x2F;p&gt;
+&lt;p&gt;In a deployment of Synapse that uses workers, these processes use replication
+to share information between themselves. One of the earliest protocols
+Synapse used for replication was built on top of TCP.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;synapse&#x2F;releases&#x2F;tag&#x2F;v1.18.0&quot;&gt;Synapse 1.18&lt;&#x2F;a&gt; introduced a new
+Redis-based replication protocol for workers to use and deprecated the
+TCP-based protocol, without specifying a removal date.&lt;&#x2F;p&gt;
+&lt;p&gt;This week we&#x27;re announcing that support for TCP replication will be removed
+from Synapse in version 1.67, which is expected to come out around Sep 13th.
+See the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;synapse&#x2F;releases&#x2F;tag&#x2F;v1.66.0&quot;&gt;release notes&lt;&#x2F;a&gt; for more
+details.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;everything-else&quot;&gt;Everything else&lt;&#x2F;h2&gt;
+&lt;p&gt;Synapse 1.66 also includes some improvements to validation on endpoints using
+&lt;a href=&quot;https:&#x2F;&#x2F;spec.matrix.org&#x2F;latest&#x2F;client-server-api&#x2F;#user-interactive-authentication-api&quot;&gt;User-Interactive Authentication&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;This version of Synapse also adds compression support for federation traffic.
+See &lt;a href=&quot;https:&#x2F;&#x2F;matrix-org.github.io&#x2F;synapse&#x2F;v1.66&#x2F;usage&#x2F;configuration&#x2F;config_documentation.html#listeners&quot;&gt;the configuration guide&lt;&#x2F;a&gt;
+for more information on how to compress HTTP traffic.&lt;&#x2F;p&gt;
+&lt;p&gt;Furthermore, Synapse 1.66 improves the &lt;a href=&quot;https:&#x2F;&#x2F;matrix-org.github.io&#x2F;synapse&#x2F;v1.66&#x2F;admin_api&#x2F;rooms.html#room-details-api&quot;&gt;Room Details amin API&lt;&#x2F;a&gt;
+and allows administrators to see if all local users have marked a given room
+as &amp;quot;forgotten&amp;quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;See the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;synapse&#x2F;releases&#x2F;tag&#x2F;v1.66.0&quot;&gt;full
+changelog&lt;&#x2F;a&gt; for a
+complete list of changes in this release. Also please have a look at the
+&lt;a href=&quot;https:&#x2F;&#x2F;matrix-org.github.io&#x2F;synapse&#x2F;v1.66&#x2F;upgrade#upgrading-to-v1660&quot;&gt;upgrade
+notes&lt;&#x2F;a&gt;
+for this version.&lt;&#x2F;p&gt;
+&lt;p&gt;Synapse is a Free and Open Source Software project, and we&#x27;d like to extend
+our thanks to everyone who contributed to this release, including (in no
+particular order) &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dklimpel&quot;&gt;Dirk Klimpel&lt;&#x2F;a&gt; and
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;AntoninLoubiere&quot;&gt;Antonin Loubiere&lt;&#x2F;a&gt;, as well as anyone
+helping us make Synapse better by sharing their feedback and reporting
+issues.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

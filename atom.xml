@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title></title>
+	<link href="/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="/"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-09-10T15:04:08+00:00</updated>
+	<id>/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Synapse 1.66 released</title>
+		<published>2022-09-05T09:23:27+00:00</published>
+		<updated>2022-09-08T07:08:36+00:00</updated>
+		<link rel="alternate" href="/blog/2022/09/02/synapse-1-66-released/" type="text/html"/>
+		<id>/blog/2022/09/02/synapse-1-66-released/</id>
+		<content type="html">&lt;p&gt;Hey all, we&#x27;ve just released &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;synapse&#x2F;releases&#x2F;tag&#x2F;v1.66.0&quot;&gt;Synapse 1.66&lt;&#x2F;a&gt;! Let&#x27;s have a
+look at what&#x27;s inside this release.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;removal-of-email-verification-delegation&quot;&gt;Removal of email verification delegation&lt;&#x2F;h2&gt;
+&lt;p&gt;Before Synapse 1.66, homeserver administrators had the possibility to
+configure Synapse to delegate verifying email addresses to an identity
+server (using the &lt;code&gt;account_threepid_delegates.email&lt;&#x2F;code&gt; configuration setting).
+This feature relied on old APIs from the Matrix specification that have since
+been &lt;a href=&quot;https:&#x2F;&#x2F;spec.matrix.org&#x2F;v1.3&#x2F;changelog&#x2F;#identity-service-api-1-1&quot;&gt;removed&lt;&#x2F;a&gt; from it.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.org&#x2F;blog&#x2F;2022&#x2F;08&#x2F;03&#x2F;synapse-1-64-released&quot;&gt;Synapse 1.64&lt;&#x2F;a&gt; announced the
+deprecation of this feature, and the addition of a warning at startup when
+the configuration setting is in use.&lt;&#x2F;p&gt;
+&lt;p&gt;As of Synapse 1.66, support for this feature has been fully removed, and
+Synapse will refuse to start if the configuration setting for it is in use.&lt;&#x2F;p&gt;
+&lt;p&gt;If this has not already been done, administrators of servers that were
+previously using this feature are encouraged to configure an SMTP server that
+Synapse can use to verify email addresses on its own. See the
+&lt;a href=&quot;https:&#x2F;&#x2F;matrix-org.github.io&#x2F;synapse&#x2F;v1.66&#x2F;usage&#x2F;configuration&#x2F;config_documentation.html#email&quot;&gt;configuration guide&lt;&#x2F;a&gt;
+for more information.&lt;&#x2F;p&gt;
+&lt;p&gt;Also see the &lt;a href=&quot;https:&#x2F;&#x2F;matrix-org.github.io&#x2F;synapse&#x2F;v1.66&#x2F;upgrade.html#delegation-of-email-validation-no-longer-supported&quot;&gt;upgrade notes&lt;&#x2F;a&gt;
+for more information.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;planned-removal-of-support-for-tcp-replication&quot;&gt;Planned removal of support for TCP replication&lt;&#x2F;h2&gt;
+&lt;p&gt;Most server administrators already know that Synapse can be made to scale
+horizontally by deploying &lt;a href=&quot;https:&#x2F;&#x2F;matrix-org.github.io&#x2F;synapse&#x2F;latest&#x2F;workers.html&quot;&gt;workers&lt;&#x2F;a&gt;. Workers are
+processes running alongside Synapse&#x27;s main process to allow offloading some
+of the work it would otherwise be doing, load balancing some of the traffic,
+etc.&lt;&#x2F;p&gt;
+&lt;p&gt;In a deployment of Synapse that uses workers, these processes use replication
+to share information between themselves. One of the earliest protocols
+Synapse used for replication was built on top of TCP.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;synapse&#x2F;releases&#x2F;tag&#x2F;v1.18.0&quot;&gt;Synapse 1.18&lt;&#x2F;a&gt; introduced a new
+Redis-based replication protocol for workers to use and deprecated the
+TCP-based protocol, without specifying a removal date.&lt;&#x2F;p&gt;
+&lt;p&gt;This week we&#x27;re announcing that support for TCP replication will be removed
+from Synapse in version 1.67, which is expected to come out around Sep 13th.
+See the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;synapse&#x2F;releases&#x2F;tag&#x2F;v1.66.0&quot;&gt;release notes&lt;&#x2F;a&gt; for more
+details.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;everything-else&quot;&gt;Everything else&lt;&#x2F;h2&gt;
+&lt;p&gt;Synapse 1.66 also includes some improvements to validation on endpoints using
+&lt;a href=&quot;https:&#x2F;&#x2F;spec.matrix.org&#x2F;latest&#x2F;client-server-api&#x2F;#user-interactive-authentication-api&quot;&gt;User-Interactive Authentication&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;This version of Synapse also adds compression support for federation traffic.
+See &lt;a href=&quot;https:&#x2F;&#x2F;matrix-org.github.io&#x2F;synapse&#x2F;v1.66&#x2F;usage&#x2F;configuration&#x2F;config_documentation.html#listeners&quot;&gt;the configuration guide&lt;&#x2F;a&gt;
+for more information on how to compress HTTP traffic.&lt;&#x2F;p&gt;
+&lt;p&gt;Furthermore, Synapse 1.66 improves the &lt;a href=&quot;https:&#x2F;&#x2F;matrix-org.github.io&#x2F;synapse&#x2F;v1.66&#x2F;admin_api&#x2F;rooms.html#room-details-api&quot;&gt;Room Details amin API&lt;&#x2F;a&gt;
+and allows administrators to see if all local users have marked a given room
+as &amp;quot;forgotten&amp;quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;See the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;synapse&#x2F;releases&#x2F;tag&#x2F;v1.66.0&quot;&gt;full
+changelog&lt;&#x2F;a&gt; for a
+complete list of changes in this release. Also please have a look at the
+&lt;a href=&quot;https:&#x2F;&#x2F;matrix-org.github.io&#x2F;synapse&#x2F;v1.66&#x2F;upgrade#upgrading-to-v1660&quot;&gt;upgrade
+notes&lt;&#x2F;a&gt;
+for this version.&lt;&#x2F;p&gt;
+&lt;p&gt;Synapse is a Free and Open Source Software project, and we&#x27;d like to extend
+our thanks to everyone who contributed to this release, including (in no
+particular order) &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dklimpel&quot;&gt;Dirk Klimpel&lt;&#x2F;a&gt; and
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;AntoninLoubiere&quot;&gt;Antonin Loubiere&lt;&#x2F;a&gt;, as well as anyone
+helping us make Synapse better by sharing their feedback and reporting
+issues.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>This Week in Matrix 2022-09-02</title>
+		<published>2022-09-02T16:46:57+00:00</published>
+		<updated>2022-09-10T15:04:08+00:00</updated>
+		<link rel="alternate" href="/blog/2022/09/02/this-week-in-matrix-2022-09-02/" type="text/html"/>
+		<id>/blog/2022/09/02/this-week-in-matrix-2022-09-02/</id>
+		<content type="html">&lt;h2 id=&quot;matrix-live&quot;&gt;Matrix Live 🎙&lt;&#x2F;h2&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;RzhMDi1aNEM&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;h2 id=&quot;dept-of-spec-scroll&quot;&gt;Dept of Spec 📜&lt;&#x2F;h2&gt;
+&lt;details &gt;
+    &lt;summary&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@hubert:uhoreg.ca&quot;&gt;uhoreg&lt;&#x2F;a&gt; reports
+&lt;&#x2F;summary&gt;
+    &lt;blockquote&gt;
+&lt;p&gt;Here&#x27;s your weekly spec update! The heart of Matrix is the specification - and this is modified by Matrix Spec Change (MSC) proposals. Learn more about how the process works at https:&#x2F;&#x2F;matrix.org&#x2F;docs&#x2F;spec&#x2F;proposals.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;msc-status&quot;&gt;MSC Status&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;strong&gt;Merged MSCs:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;No MSCs were merged this week.&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;MSCs in Final Comment Period:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;No MSCs are in FCP.&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;New MSCs:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;There were no new MSCs this week.&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;spec-core-team&quot;&gt;Spec Core Team&lt;&#x2F;h2&gt;
+&lt;p&gt;It&#x27;s been a light week for the spec core team, but we have been looking at &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;matrix-spec-proposals&#x2F;pull&#x2F;3862&quot;&gt;MSC3862&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;matrix-spec-proposals&#x2F;pull&#x2F;3758&quot;&gt;MSC3758&lt;&#x2F;a&gt;.  These are two proposals that try to extend push rules in different ways to be able to match more than just strings.  So we have been discussing the relative merits of both proposals.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;random-msc-of-the-week&quot;&gt;Random MSC of the Week&lt;&#x2F;h2&gt;
+&lt;p&gt;The random MSC of the week is... &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;matrix-spec-proposals&#x2F;pull&#x2F;3386&quot;&gt;MSC3386: Unified Join Rules&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+&lt;p&gt;Currently, a room can be set so that prospective members can &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;matrix-doc&#x2F;pull&#x2F;2403&quot;&gt;knock&lt;&#x2F;a&gt; to request to join the room, or allow &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;matrix-doc&#x2F;pull&#x2F;3083&quot;&gt;members of a different room to join&lt;&#x2F;a&gt;.  However a room cannot be set up to allow both; MSC3386 proposes a change to the join rules to change this.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;matrix_spec_change_proposals.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+
+&lt;&#x2F;details&gt;&lt;h2 id=&quot;dept-of-servers-europea&quot;&gt;Dept of Servers 🏢&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;synapse-website&quot;&gt;Synapse (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;synapse&#x2F;&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;Synapse is a Matrix homeserver implementation developed by the matrix.org core team&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@shayshay:matrix.org&quot;&gt;Shay&lt;&#x2F;a&gt; reports&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This week we released Synapse 1.66.0! Some notable features are:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding forgotten status to Room Details Admin API.&lt;&#x2F;li&gt;
+&lt;li&gt;Adding an experimental implementation for MSC3852 (Expose user agents on Device).&lt;&#x2F;li&gt;
+&lt;li&gt;Adding org.matrix.msc2716v4 experimental room version with updated content fields. Part of MSC2716 (Importing history)&lt;&#x2F;li&gt;
+&lt;li&gt;Adding support for compression to federation responses.&lt;&#x2F;li&gt;
+&lt;li&gt;Improving performance of sending messages in rooms with thousands of local users.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Plus a host of bugfixes and other changes to make Synapse faster and leaner! Take a look. https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;synapse&#x2F;releases&#x2F;tag&#x2F;v1.66.0. In addition, work continues on fast room joins-stay tuned, as we are getting closer to the finish line.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;dendrite-website&quot;&gt;Dendrite (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;dendrite&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;Second generation Matrix homeserver&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@s7evink:matrix.org&quot;&gt;Till&lt;&#x2F;a&gt; says&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This week we released &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;dendrite&#x2F;releases&#x2F;tag&#x2F;v0.9.6&quot;&gt;Dendrite 0.9.6&lt;&#x2F;a&gt; which includes a number of fixes, including a rewrite of the appservice component:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;features&quot;&gt;Features&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The appservice API has been refactored for improved performance and stability
+&lt;ul&gt;
+&lt;li&gt;The appservice database has been deprecated, as the roomserver output stream is now used as the data source instead&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;The &lt;code&gt;generate-config&lt;&#x2F;code&gt; tool has been updated to support additional scenarios, i.e. for CI configuration generation and generating both monolith and polylith skeleton config files&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;fixes&quot;&gt;Fixes&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The username length check has been fixed on new account creation&lt;&#x2F;li&gt;
+&lt;li&gt;The length of the &lt;code&gt;type&lt;&#x2F;code&gt;, &lt;code&gt;sender&lt;&#x2F;code&gt;, &lt;code&gt;state_key&lt;&#x2F;code&gt; and &lt;code&gt;room_id&lt;&#x2F;code&gt; fields in events are now verified by number of codepoints rather than bytes, fixing the &amp;quot;Cat Overflow&amp;quot; bug&lt;&#x2F;li&gt;
+&lt;li&gt;UTF-16 surrogate handling in the canonical JSON implementation has been fixed&lt;&#x2F;li&gt;
+&lt;li&gt;A race condition when starting the keyserver has been fixed&lt;&#x2F;li&gt;
+&lt;li&gt;A race condition when configuring HTTP servers and routing at startup has been fixed&lt;&#x2F;li&gt;
+&lt;li&gt;A bug where the incorrect limit was used for lazy-loading memberships has been fixed&lt;&#x2F;li&gt;
+&lt;li&gt;The number of push notifications will now be sent to the push gateway&lt;&#x2F;li&gt;
+&lt;li&gt;A missing index causing slow performance on the sync API send-to-device table has been added (contributed by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;PiotrKozimor&quot;&gt;PiotrKozimor&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;Event auth will now correctly check for the existence of the &lt;code&gt;&amp;quot;creator&amp;quot;&lt;&#x2F;code&gt; field in create events&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;As always, please feel free to join us in &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#dendrite:matrix.org&quot;&gt;#dendrite:matrix.org&lt;&#x2F;a&gt; for more Dendrite-related discussion.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;homeserver-deployment-inbox-tray&quot;&gt;Homeserver Deployment 📥️&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;helm-chart-website&quot;&gt;Helm Chart (&lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;ananace&#x2F;charts&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;Matrix Kubernetes applications packaged into helm charts&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@ace:kittenface.studio&quot;&gt;Ananace&lt;&#x2F;a&gt; announces&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This week has seen some updates to &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;ananace&#x2F;charts&quot;&gt;my Helm Charts&lt;&#x2F;a&gt;, bumping element-web to 1.11.4 and matrix-synapse to 1.66.0 - as well as making the worker configuration more flexible in handling multiple instances of specialised workers.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@ace:kittenface.studio&quot;&gt;Ananace&lt;&#x2F;a&gt; says&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;And another quick update on &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;ananace&#x2F;charts&quot;&gt;my Helm Charts&lt;&#x2F;a&gt;, bumped my synatainer package to the just released 0.4.2&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;dept-of-bridges-bridge-at-night&quot;&gt;Dept of Bridges 🌉&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;postmoogle-website&quot;&gt;Postmoogle (&lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;etke.cc&#x2F;postmoogle&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;An Email to Matrix bridge. 1 room = 1 mailbox.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@aine:etke.cc&quot;&gt;Aine&lt;&#x2F;a&gt; says&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Postmoogle v0.9.0&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;ACLs with wildcards, controlled directly from matrix chat&lt;&#x2F;li&gt;
+&lt;li&gt;Admin users&lt;&#x2F;li&gt;
+&lt;li&gt;Ability to list all mailboxes and disable&#x2F;remove them directly from matrix chat&lt;&#x2F;li&gt;
+&lt;li&gt;Display options (show&#x2F;hide sender, show&#x2F;hide subject, html&#x2F;text-only parsing, enable&#x2F;disable email -&amp;gt; matrix threads, enable&#x2F;disable attachments support)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;etke.cc&#x2F;postmoogle&quot;&gt;Source code&lt;&#x2F;a&gt;, matrix room: &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#postmoogle:etke.cc&quot;&gt;#postmoogle:etke.cc&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;matrix-hookshot-website&quot;&gt;matrix-hookshot (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Half-Shot&#x2F;matrix-hookshot&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;A multi purpose multi platform bridge, formerly known as matrix-github&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@Half-Shot:half-shot.uk&quot;&gt;Half-Shot&lt;&#x2F;a&gt; reports&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Another week, another hookshot release. This release brings support for &lt;strong&gt;Arm64&lt;&#x2F;strong&gt; docker builds, a revamped JSON logger and much prettier error reporting in the widget. As always, there is a good chunk of bugfixes too.&lt;&#x2F;p&gt;
+&lt;p&gt;You can check out version &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;matrix-hookshot&#x2F;releases&#x2F;tag&#x2F;2.1.1&quot;&gt;2.1.1&lt;&#x2F;a&gt; here!&lt;&#x2F;p&gt;
+&lt;p&gt;Come chat to us in &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#hookshot:half-shot.uk&quot;&gt;#hookshot:half-shot.uk&lt;&#x2F;a&gt; if you need a hand setting up.&lt;&#x2F;p&gt;
+&lt;p&gt;In terms of what will be appearing in the near future:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for adding JIRA connections via widgets.&lt;&#x2F;li&gt;
+&lt;li&gt;Encryption support (at long last) so you can bridge in hookshot to encrypted rooms.&lt;&#x2F;li&gt;
+&lt;li&gt;An experimental new way to &lt;em&gt;share&lt;&#x2F;em&gt; logic between rooms configured with custom JS functions. Possibly utilizing Matrix rooms-as-software-libraries.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;dept-of-clients-iphone&quot;&gt;Dept of Clients 📱&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;beeper&quot;&gt;Beeper&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@eric:beeper.com&quot;&gt;Eric Migicovsky&lt;&#x2F;a&gt; says&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hey it’s Eric from &lt;a href=&quot;https:&#x2F;&#x2F;www.beeper.com&quot;&gt;Beeper&lt;&#x2F;a&gt;! Been a while since our last update. Reminder: &lt;a href=&quot;https:&#x2F;&#x2F;www.beeper.com&quot;&gt;Beeper&lt;&#x2F;a&gt; is a universal chat app built on top of Matrix. We&#x27;ve created 12+ open source Matrix bridges and integrated them into an easy to use all-in-one service which does not require setting up your own homeserver.&lt;&#x2F;p&gt;
+&lt;p&gt;Since our last update in &lt;a href=&quot;&#x2F;blog&#x2F;2022&#x2F;02&#x2F;11&#x2F;this-week-in-matrix-2022-02-11#beeper-website&quot;&gt;February&lt;&#x2F;a&gt; (!) we have been really busy! We published a short-term &lt;a href=&quot;https:&#x2F;&#x2F;blog.beeper.com&#x2F;p&#x2F;product-roadmap-april-2022&quot;&gt;roadmap&lt;&#x2F;a&gt; back in April and have almost completed all items on the list. &lt;&#x2F;p&gt;
+&lt;p&gt;Today I want to share the improvements we’ve made to &lt;strong&gt;Beeper Desktop&lt;&#x2F;strong&gt;. Check out the &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=xjMOb4Jwrfg&quot;&gt;video&lt;&#x2F;a&gt; below for a full demo! &lt;&#x2F;p&gt;
+&lt;h3 id=&quot;new-features&quot;&gt;New features:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Shiny new design and theme (just released yesterday!&lt;&#x2F;li&gt;
+&lt;li&gt;Completely updated inbox workflow
+&lt;ul&gt;
+&lt;li&gt;It’s designed to make it easier to prioritize the chats that matter most to you, and quickly archive everything else&lt;&#x2F;li&gt;
+&lt;li&gt;Actions like archive&#x2F;pin&#x2F;mark as unread&lt;&#x2F;li&gt;
+&lt;li&gt;Collapsible archive section&lt;&#x2F;li&gt;
+&lt;li&gt;Auto-archive messages after you reply or a fixed time&lt;&#x2F;li&gt;
+&lt;li&gt;Tons of new keyboard shortcuts&lt;&#x2F;li&gt;
+&lt;li&gt;See a full chat preview without opening chat or marking it read&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Scheduled messages - schedule a message to be sent in any chat. Works on any chat network that Beeper supports, and will send even if your devices are all powered off.&lt;&#x2F;li&gt;
+&lt;li&gt;Start New Chat directly from Beeper Desktop on any bridged chat network&lt;&#x2F;li&gt;
+&lt;li&gt;Sent status for bridged messages - get confirmation or a failure alert if the bridge is unable to send a message to the remote network&lt;&#x2F;li&gt;
+&lt;li&gt;Two-factor verification codes sent via Android SMS or iMessage are automatically copied to clipboard. Just like Safari!&lt;&#x2F;li&gt;
+&lt;li&gt;Tons and tons of bugfixes and smaller new features&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;We’ve also been working hard on new bridges + features, Beeper Android and Beeper iOS, but I will save those for another post! &lt;&#x2F;p&gt;
+&lt;p&gt;Want to get access to Beeper? Sign up on &lt;a href=&quot;http:&#x2F;&#x2F;beeper.com&quot;&gt;beeper.com&lt;&#x2F;a&gt; and if you want to jump the line, &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;onbeeper&quot;&gt;send us a DM&lt;&#x2F;a&gt; on Twitter. Or chat with the community &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#beeper:beeper.com&quot;&gt;#beeper:beeper.com&lt;&#x2F;a&gt; &lt;&#x2F;p&gt;
+&lt;p&gt;Want to work with us at Beeper? We are hiring 100% remote backend, iOS and Android developers. Send me a message @eric:beeper.com. And if you want to develop an open source bridge, we will fund it with up to $5,000.&lt;&#x2F;p&gt;
+&lt;iframe src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;IY5zOevr08I&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;nheko-website&quot;&gt;Nheko (&lt;a href=&quot;https:&#x2F;&#x2F;nheko-reborn.github.io&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;Desktop client for Matrix using Qt and C++17.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@deepbluev7:neko.dev&quot;&gt;Nico&lt;&#x2F;a&gt; says&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We now properly inherit the sticker packs from the parent spaces, which gives you the possibility to expose stickers to your whole community by editing them in a single space. The bug that deleted widgets were shown, that sneaked into the last release, should also be resolved. If your server doesn&#x27;t follow the client server spec on event size limits, Nheko is now stricter when validating the return values and might refuse to show events or room violating such constraints. Before this fix using a non-compliant server could make Nheko fail to properly process the sync response. Forest cleaned up our formatting configuration, Zirnc fixed our misleading bug report template suggesting the version field would be somewhere it isn&#x27;t and Hiers made the edit button in the room profile match the one in the user profile. Forest also fixed our usage of the Qt colour palette for reactions and made hitting the escape key always return focus to the message input.&lt;&#x2F;p&gt;
+&lt;p&gt;Also, if you managed to find me on the Matrix Community Summit, you might have had the chance to get one of the rare hardware Nheko patches (contrary to the software ones).&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;element-web-desktop-website&quot;&gt;Element Web&#x2F;Desktop (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vector-im&#x2F;element-web&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;Secure and independent communication, connected via Matrix. Come talk with us in &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#element-web:matrix.org&quot;&gt;#element-web:matrix.org&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@daniellekirkwood:one.ems.host&quot;&gt;Danielle&lt;&#x2F;a&gt; says&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;🔒 &lt;strong&gt;We have a security release: Please update to v1.11.4 ASAP.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Last weekend we received a report from Val Lorentz (thank you!) that it was possible to create a situation where Element wouldn’t show all of the user’s rooms or Spaces, causing minor (temporary) corruption and Denial of Service (DoS). We’ve fixed this case in v1.11.4 and encourage everyone to update as soon as possible.&lt;&#x2F;p&gt;
+&lt;p&gt;While the vulnerabilities themselves are not disclosed yet, there is more information on the &lt;a href=&quot;https:&#x2F;&#x2F;element.io&#x2F;blog&#x2F;element-web-desktop-1-11-4-a-security-update-deferred-dms-and-more&#x2F;&quot;&gt;element.io blog&lt;&#x2F;a&gt; and the &lt;a href=&quot;https:&#x2F;&#x2F;matrix.org&#x2F;blog&#x2F;2022&#x2F;08&#x2F;31&#x2F;security-releases-matrix-js-sdk-19-4-0-and-matrix-react-sdk-3-53-0&quot;&gt;matrix.org blog&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Please note that this also affects consumers of the matrix-react-sdk and matrix-js-sdk: updating to v3.53.0 and v19.4.0 respectively should resolve the issue.&lt;&#x2F;p&gt;
+&lt;p&gt;🥼  &lt;strong&gt;In labs (you can enable labs features in settings on develop.element.io or on Nightly):&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Threads Notification improvements are coming! This week the team met to review all the feedback given by Beta users, alongside our MSCs, and Proof of Concept work to finalise the plan and approach for Threads Notifications. Watch this space!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;element-ios-website&quot;&gt;Element iOS (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vector-im&#x2F;element-ios&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;Secure and independent communication for iOS, connected via Matrix. Come talk with us in &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#element-ios:matrix.org&quot;&gt;#element-ios:matrix.org&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@stefan.ceriu:matrix.org&quot;&gt;Ștefan&lt;&#x2F;a&gt; says&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Element 1.9.2 is now available on the AppStore and with it comes a brand new home screen layout. The new view is cleaner, easier to browse, and faster to navigate. We’d love for you to enable the labs setting and try it out.&lt;&#x2F;li&gt;
+&lt;li&gt;There’s exciting work happening in other areas as well: we’re working hard on deferring DM creation until the first message is sent and the new rich text editor is quickly taking shape. &lt;&#x2F;li&gt;
+&lt;li&gt;On the ElementX front we have made very good progress on integrating the new sync mechanism and the new Rust Timeline API is proving to be quite a treat.&lt;&#x2F;li&gt;
+&lt;li&gt;And, as always, we fixed some big bugs and some not so big ones. Enjoy!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;element-android-website&quot;&gt;Element Android (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;vector-im&#x2F;element-android&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;Secure and independent communication for Android, connected via Matrix. Come talk with us in &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#element-android:matrix.org&quot;&gt;#element-android:matrix.org&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@Manu:matrix.org&quot;&gt;Manu&lt;&#x2F;a&gt; announces&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Coming soon on Element Android is the new app layout. The home page of the app has been redesigned. The new view is cleaner, easier to browse, and faster to navigate. Keep an eye out on twitter for our teaser trailers! &lt;&#x2F;li&gt;
+&lt;li&gt;The team has been working on deferring DM creation until after the first message has been sent. So you’ll no longer invite another person to an empty room, instead they’ll see your message and a new invite all at once.&lt;&#x2F;li&gt;
+&lt;li&gt;Along with these exciting improvements we’ve fixed several bugs, including improving the speed of the app when you resume it.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;element-website&quot;&gt;Element (&lt;a href=&quot;https:&#x2F;&#x2F;element.io&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;Everything related to Element but not strictly bound to a client&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@kittykat:matrix.org&quot;&gt;kittykat&lt;&#x2F;a&gt; says&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Community testing&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;We’d love to hear your feedback on the new composer redesign, including an all new WISYWIG editor: &lt;a href=&quot;https:&#x2F;&#x2F;docs.google.com&#x2F;forms&#x2F;d&#x2F;e&#x2F;1FAIpQLSeGZMdaWFnaf9XMc6iNWaXu6MpKsdAX8QE83POm9_nu2JGzsg&#x2F;viewform?usp=sf_link&quot;&gt;sign up to take part in testing&lt;&#x2F;a&gt;!&lt;&#x2F;li&gt;
+&lt;li&gt;For more info on our next testing sessions, you can join us at &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#element-community-testing:matrix.org&quot;&gt;#element-community-testing:matrix.org&lt;&#x2F;a&gt;!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;cinny-website&quot;&gt;Cinny (&lt;a href=&quot;https:&#x2F;&#x2F;cinny.in&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;Cinny is a Matrix client focused on simplicity, elegance and security&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@ajbura:matrix.org&quot;&gt;ajbura&lt;&#x2F;a&gt; reports&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Security update&lt;&#x2F;p&gt;
+&lt;p&gt;This release address the vulnerability found this week in matrix-js-sdk &amp;lt;19.4.0, so please update to Cinny v2.1.3 at your earliest convenience.&lt;&#x2F;p&gt;
+&lt;p&gt;If you are using &lt;a href=&quot;https:&#x2F;&#x2F;app.cinny.in&quot;&gt;our hosted version&lt;&#x2F;a&gt; then it is already up-to-date and all you need is a refresh and clear cache (if you were hit by the vulnerability).&lt;&#x2F;p&gt;
+&lt;p&gt;You can read more about the vulnerability at &lt;a href=&quot;https:&#x2F;&#x2F;matrix.org&#x2F;blog&#x2F;2022&#x2F;08&#x2F;31&#x2F;security-releases-matrix-js-sdk-19-4-0-and-matrix-react-sdk-3-53-0&quot;&gt;Security releases: matrix-js-sdk 19.4.0&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Find more about Cinny at https:&#x2F;&#x2F;cinny.in&#x2F;
+Join our space at: https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#cinny-space:matrix.org
+Github: https:&#x2F;&#x2F;github.com&#x2F;ajbura&#x2F;cinny
+Twitter: https:&#x2F;&#x2F;twitter.com&#x2F;@cinnyapp&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;dept-of-non-chat-clients-control-knobs&quot;&gt;Dept of Non Chat Clients 🎛️&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;circles-website&quot;&gt;Circles (&lt;a href=&quot;https:&#x2F;&#x2F;www.kombuchaprivacy.com&#x2F;circles&#x2F;&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;E2E encrypted social networking built on Matrix. Safe, private sharing for your friends, family, and community.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@cvwright:matrix.org&quot;&gt;cvwright&lt;&#x2F;a&gt; reports&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The Circles project is now Circuli.  F-Droid users can get a sneak peek at the new Android beta by installing our &lt;a href=&quot;https:&#x2F;&#x2F;circu.li&#x2F;fdroid&#x2F;repo&quot;&gt;beta repo&lt;&#x2F;a&gt;.  Coming soon on Google Play!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;dept-of-sdks-and-frameworks&quot;&gt;Dept of SDKs and Frameworks 🧰&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;trixnity-website&quot;&gt;Trixnity (&lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;trixnity&#x2F;trixnity&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;Multiplatform Kotlin SDK for Matrix&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@benedict:imbitbu.de&quot;&gt;Benedict&lt;&#x2F;a&gt; says&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Trixnity 2.3.0 is out. We&#x27;ve done a large refactoring in &lt;code&gt;trixnity-client&lt;&#x2F;code&gt; making it even more modular by using dependency injection. This theoretically allows you to disable modules (e. g. E2EE) or add custom functionality. We&#x27;ve also made some improvements in the &lt;code&gt;*api-server&lt;&#x2F;code&gt; modules APIs to enable implementing just a few and not all endpoints (e. g. in proxies).&lt;&#x2F;p&gt;
+&lt;p&gt;Moreover, you can now play with Trixnity without building the whole SDK by using the new &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;trixnity&#x2F;trixnity-examples&quot;&gt;Trixnity examples repository&lt;&#x2F;a&gt;. The examples are running on the JVM, in your Browser, NodeJS environment or as native binary on your host. It&#x27;s pretty fun, except for the fact that you don&#x27;t need something like a ping bot with E2EE in the browser 😄&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;matrix-rust-sdk-website&quot;&gt;matrix-rust-sdk (&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;matrix-rust-sdk&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;Next-gen crypto-included SDK for developing Clients, Bots and Appservices; written in Rust with bindings for Node, Swift and WASM&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@gnunicorn:matrix.org&quot;&gt;ben&lt;&#x2F;a&gt; announces&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;After merging &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ruma&#x2F;ruma&#x2F;pulls?q=is%3Apr+is%3Aclosed+sort%3Aupdated-desc&quot;&gt;the types into ruma&lt;&#x2F;a&gt; a few weeks back, now the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;matrix-rust-sdk&#x2F;pull&#x2F;728&quot;&gt;Sliding Sync PR has been handed in for review&lt;&#x2F;a&gt; on the Rust SDK, too. With its own jack-in test client and Element-X iOS being build on it, the authors are pretty confident with the current state of that API, which will still only be available behind a feature-flag after merge (which is on by default for FFI though). That said, work isn&#x27;t done here, &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ruma&#x2F;ruma&#x2F;pull&#x2F;1273&quot;&gt;extensions aren&#x27;t even fully specified&lt;&#x2F;a&gt; yet and many other aspects, like v3-fallback, aren&#x27;t even started. Once this is reviewed and merged a tracking issue will be initiated documenting the missing pieces and allow the work to be more spread out (if you are interested in helping out, ping us in our matrix channel!).&lt;&#x2F;p&gt;
+&lt;p&gt;Similarly, the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;matrix-rust-sdk&#x2F;pull&#x2F;940&quot;&gt;new Timeline API&lt;&#x2F;a&gt; is making progress as well, to that point that &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;matrix-rust-sdk&#x2F;pull&#x2F;940#issuecomment-1227557200&quot;&gt;fractal has a PR trying it out&lt;&#x2F;a&gt;. Same goes for the crypto for web-js bindings, which have seen some further planning and coordination effort and minor fixes and exposing of further functions as a result of that. Aside from the usual clean ups and API improvements, we have found one significant problem during last weeks workshops at Matrix Summit Berlin: a recent change in the API lead to some functions now stalling if you await on some within a sync-callback or -handler. &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;matrix-rust-sdk&#x2F;pull&#x2F;940#issuecomment-1227557200&quot;&gt;A fix has been merged to the examples&lt;&#x2F;a&gt;, but the team has agreed to revisit the API and change the return type to prevent this foot-gun from breaking existing code elsewhere - stay tuned for that update.&lt;&#x2F;p&gt;
+&lt;p&gt;️👉️ Wanna hack on matrix rust? Go check out our &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;matrix-org&#x2F;matrix-rust-sdk&#x2F;issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22&quot;&gt;&lt;code&gt;help wanted&lt;&#x2F;code&gt; tagged issues&lt;&#x2F;a&gt; and join our matrix channel at Matrix Rust SDK.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;matrix-dart-sdk-website&quot;&gt;Matrix Dart SDK (&lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;famedly&#x2F;company&#x2F;frontend&#x2F;famedlysdk&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;Matrix SDK written in pure Dart.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@deepbluev7:neko.dev&quot;&gt;Nico&lt;&#x2F;a&gt; announces&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We released version 0.13.0, which includes some small breaking changes, but also cools stuff like support for MSC3814, Dehydrated Devices V2 aka Shrivelled Sessions and key requests in more cases. Fixes for group calls and properly updating of the last message in a room. And for better performance on web a migration to Hive Box Collections.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;dept-of-ops&quot;&gt;Dept of Ops 🛠&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;synatainer-website&quot;&gt;Synatainer (&lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;mb-saces&#x2F;synatainer&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;Synapse Maintenance Container – Docker container with tools for synapse &amp;amp; postgres database maintenance&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@saces:c-base.org&quot;&gt;saces&lt;&#x2F;a&gt; announces&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;New in v0.4.2&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;MXPASSFILE - like PGPASSFILE, but for matrix tokens. See &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;mb-saces&#x2F;synatainer&#x2F;-&#x2F;blob&#x2F;main&#x2F;MXPassfile.adoc&quot;&gt;MXPassfile.adoc&lt;&#x2F;a&gt; for details.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;code&gt;stui&lt;&#x2F;code&gt; is a typical golang binary, it&#x27;s also available as stand alone version from the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;mb-saces&#x2F;synatainer&#x2F;-&#x2F;releases&quot;&gt;release page&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Tools for &lt;code&gt;No state group for unknown or outlier event&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;[docker run -it --rm registry.gitlab.com&#x2F;mb-saces&#x2F;synatainer:0.4.2] stui 12507 --help
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#ffffff;color:#323232;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;[docker run -it --rm registry.gitlab.com&#x2F;mb-saces&#x2F;synatainer:0.4.2] stui 13026 --help
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The tools scan the database for the issues and tells you which rooms are affected. Adding the &lt;code&gt;--fix&lt;&#x2F;code&gt; option, it &lt;del&gt;destroys your database&lt;&#x2F;del&gt; deletes the bogous extremeties. Use at your own risc. And make a backup.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Start the container without command and let do its magic :)&lt;&#x2F;p&gt;
+&lt;p&gt;What it does by default:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;daily:
+&lt;ul&gt;
+&lt;li&gt;purge all rooms without local members&lt;&#x2F;li&gt;
+&lt;li&gt;run the state autocompressor (500&#x2F;100)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;weekly:
+&lt;ul&gt;
+&lt;li&gt;delete old remote media (&amp;gt;90 days)&lt;&#x2F;li&gt;
+&lt;li&gt;delete old message history from public joinable rooms (&amp;gt;180 days)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;monthly:
+&lt;ul&gt;
+&lt;li&gt;vacuum the database&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Source: https:&#x2F;&#x2F;gitlab.com&#x2F;mb-saces&#x2F;synatainer&lt;&#x2F;p&gt;
+&lt;p&gt;Room: &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#synatainer:c-base.org&quot;&gt;#synatainer:c-base.org&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;dept-of-events-and-talks&quot;&gt;Dept of Events and Talks 🗣️&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;matrix-community-summit&quot;&gt;Matrix Community Summit&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@sumner:nevarro.space&quot;&gt;Sumner Evans&lt;&#x2F;a&gt; says&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I wrote a &lt;a href=&quot;https:&#x2F;&#x2F;sumnerevans.com&#x2F;posts&#x2F;travel&#x2F;2022-berlin-matrix-summit&#x2F;summit&#x2F;&quot;&gt;blog post about my experience at the Berlin Matrix Community Summit&lt;&#x2F;a&gt;. I had a wonderful time meeting people in the community and talking about Matrix. Thanks to the organizers of the summit for putting together such a great schedule!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;matrix-user-meetup-berlin&quot;&gt;Matrix User Meetup Berlin&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@saces:c-base.org&quot;&gt;saces&lt;&#x2F;a&gt; reports&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Next Matrix user meetup 7.9.2022, 8 pm @ c-base&lt;&#x2F;p&gt;
+&lt;p&gt;Meet other matrix users, chat about Matrix, the rest, and everything else, discuss your Matrix ideas, sign each other in persona, and maybe spice the evening with a good mate or beer.&lt;&#x2F;p&gt;
+&lt;p&gt;Also when the bbq is lit you may wish you brougth your favorite item :)&lt;&#x2F;p&gt;
+&lt;p&gt;Every first Wednesday of the month in the c-base at 8pm (&#x27;til the next pandemic).&lt;&#x2F;p&gt;
+&lt;p&gt;Matrix room: &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#mumb:c-base.org&quot;&gt;#mumb:c-base.org&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;dweb-camp&quot;&gt;DWeb Camp&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@cel:spruceid.com&quot;&gt;cel&lt;&#x2F;a&gt; announces&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DWeb Camp 2022 (SF) happened!&lt;&#x2F;p&gt;
+&lt;p&gt;Camp ended Sunday, August 28th, 2022 (Navarro, CA, USA) (Internet Archive &#x2F; Gatherings For Good &#x2F; Custom Camps &#x2F; Camp Navarro).&lt;&#x2F;p&gt;
+&lt;p&gt;Previous update: &lt;a href=&quot;https:&#x2F;&#x2F;matrix.org&#x2F;blog&#x2F;2022&#x2F;08&#x2F;19&#x2F;this-week-in-matrix-2022-08-19#one-week-until-dweb-camp&quot;&gt;https:&#x2F;&#x2F;matrix.org&#x2F;blog&#x2F;2022&#x2F;08&#x2F;19&#x2F;this-week-in-matrix-2022-08-19#one-week-until-dweb-camp&lt;&#x2F;a&gt; (&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;!QQpfJfZvqxbCfeDgCj:matrix.org&#x2F;$891I4nVQp4ZBGG79-vsO6w8rEGJ_Vfar69QsICy8R98?via=matrix.org&amp;amp;via=element.io&amp;amp;via=kde.org&quot;&gt;!QQpfJfZvqxbCfeDgCj:matrix.org&#x2F;$891I4nVQp4ZBGG79-vsO6w8rEGJ_Vfar69QsICy8R98&lt;&#x2F;a&gt;)&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;summit-bridge-call&quot;&gt;Summit Bridge Call&lt;&#x2F;h3&gt;
+&lt;p&gt;There was an informal audio&#x2F;video chat time where Matrix Community Summit (Berlin &#x2F; c-base).&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;next-dweb-camp&quot;&gt;Next DWeb Camp&lt;&#x2F;h3&gt;
+&lt;p&gt;Planning for next camp(s) has begun. To participate, check out &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#decentralizedweb-general:matrix.org&quot;&gt;#decentralizedweb-general:matrix.org&lt;&#x2F;a&gt; &amp;amp; https:&#x2F;&#x2F;getdweb.net&#x2F;get-involved&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;dept-of-interesting-projects&quot;&gt;Dept of Interesting Projects 🛰️&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@bram:noordstar.me&quot;&gt;Bram&lt;&#x2F;a&gt; announces&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It can be useful from time to time to experiment with some silly stuff and see where it leads. This week, I created a public Matrix room that is exclusive for people called Bram: everyone can join, but only people called Bram can send messages.&lt;&#x2F;p&gt;
+&lt;p&gt;The room can be found at &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#all:brams.dev&quot;&gt;#all:brams.dev&lt;&#x2F;a&gt; and everyone&#x27;s allowed to take a look at it. The process is not yet automated but that might change either through spec functionality of with the use of a simple bot.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;effektio-website&quot;&gt;Effektio (&lt;a href=&quot;https:&#x2F;&#x2F;effektio.org&quot;&gt;website&lt;&#x2F;a&gt;)&lt;&#x2F;h3&gt;
+&lt;p&gt;The one mobile-first, decentralized community organizing app&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@gnunicorn:matrix.org&quot;&gt;ben&lt;&#x2F;a&gt; reports&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For the first time, at Matrix Summit Berlin last Saturday, we have presented Effektio to, its goals, ambitions and plans to a wider audience and we couldn&#x27;t be more ecstatic about the response. Even though the presentation didn&#x27;t quite go as planned, as we decided on a highly engaged audience and discussed various aspects, the overall feedback was great- with many people asking for access and sharing useful ideas and contacts. Unfortunately the presentation wasn&#x27;t recorded (the quality of our own recording isn&#x27;t really sufficient) and the slides alone will not be enough, but we are working on making something along it available.&lt;&#x2F;p&gt;
+&lt;p&gt;That has given the team another motivational boost, before as well as the feedback after, to get something usable out there. While the task-lists and news features presented have now properly mocked, other features on the chat side have fully materialized: like &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;effektio&#x2F;effektio&#x2F;pull&#x2F;217&quot;&gt;real time updates&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;effektio&#x2F;effektio&#x2F;pull&#x2F;225&quot;&gt;typing notifications&lt;&#x2F;a&gt; and cross device verification (so you can share your existing keys) and general things like switching to a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;effektio&#x2F;effektio&#x2F;pull&#x2F;210&quot;&gt;event-handlers rather than overloading the sync-callback&lt;&#x2F;a&gt;. Unfortunately we have also seen quite a few set backs, mainly around using ffi-gen as the intermediate between rust and dart, which makes us wonder if switching to uniffi and share back more of our work in effektio upstream might even be easier in the long run.&lt;&#x2F;p&gt;
+&lt;p&gt;Either way, we are motivated than ever before to build it out and get it into the hands of the first real users than ever.&lt;&#x2F;p&gt;
+&lt;p&gt;📰 You want updates more frequently and closer to when they actually happen? Join our &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#news:effektio.org&quot;&gt;Effektio Matrix News room&lt;&#x2F;a&gt; or hangout and discuss with the team in our &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#foyer:effektio.org&quot;&gt;public foyer Matrix channel&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;beeper-beeper&quot;&gt;Beeper beeper&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;@eric:beeper.com&quot;&gt;Eric Migicovsky&lt;&#x2F;a&gt; says&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Oh and as a fun side project we are building a real Beeper beeper. It might be the very first dedicated Matrix device? It’s basically a Blackberry for Matrix, with an e-paper display (same tech as Pebble) 🙂 https:&#x2F;&#x2F;twitter.com&#x2F;ericmigi&#x2F;status&#x2F;1558137599893524480 If you are a hacker who wants to build something with it, I have a few extra that I might be able to give out. Send me a message with a convincing argument 😉&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;blog&#x2F;2022&#x2F;09&#x2F;02&#x2F;this-week-in-matrix-2022-09-02&#x2F;beeperhw1.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;dept-of-ping-table-tennis-paddle-and-ball&quot;&gt;Dept of Ping 🏓&lt;&#x2F;h2&gt;
+&lt;p&gt;Here we reveal, rank, and applaud the homeservers with the lowest ping, as measured by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;maubot&#x2F;echo&quot;&gt;pingbot&lt;&#x2F;a&gt;, a &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;maubot&#x2F;maubot&quot;&gt;maubot&lt;&#x2F;a&gt; that you can host on your own server.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;ping-maunium-net&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#ping:maunium.net&quot;&gt;#ping:maunium.net&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Join &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#ping:maunium.net&quot;&gt;#ping:maunium.net&lt;&#x2F;a&gt; to experience the fun live, and to find out how to add YOUR server to the game.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;Rank&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Hostname&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Median MS&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;1&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;conduit.rs&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;271&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;2&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;babel.sh&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;354&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;3&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;envs.net&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;358.5&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;4&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;keks.club&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;559&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;5&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;dendrite.babel.sh&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;617&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;6&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;kittenface.studio&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;740&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;7&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;jacksonchen666.com&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;999&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;8&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;diasp.in&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;1105&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;9&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;icbm.codes&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;1125&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;10&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;cutema.re&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;1206.5&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h3 id=&quot;ping-no-synapse-maunium-net&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#ping-no-synapse:maunium.net&quot;&gt;#ping-no-synapse:maunium.net&lt;&#x2F;a&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Join &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#ping-no-synapse:maunium.net&quot;&gt;#ping-no-synapse:maunium.net&lt;&#x2F;a&gt; to experience the fun live, and to find out how to add YOUR server to the game.&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;text-align: center&quot;&gt;Rank&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Hostname&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Median MS&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;1&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;babel.sh&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;127&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;2&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;dendrite.babel.sh&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;240&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;3&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;conduit.hazmat.jacksonchen666.com&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;241&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;4&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;matrix.sum7.eu&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;335&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;5&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;cutema.re&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;352&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;6&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;babel1.eu&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;390&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;7&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;dendrite.s3cr3t.me&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;413&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;8&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;rustybever.be&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;518&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;9&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;grin.hu&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;853&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td style=&quot;text-align: center&quot;&gt;10&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;johnson.gg&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;1148&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;that-s-all-i-know-checkered-flag&quot;&gt;That&#x27;s all I know 🏁&lt;&#x2F;h2&gt;
+&lt;p&gt;See you next week, and be sure to stop by &lt;a href=&quot;https:&#x2F;&#x2F;matrix.to&#x2F;#&#x2F;#twim:matrix.org&quot;&gt;#twim:matrix.org&lt;&#x2F;a&gt; with your updates!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
