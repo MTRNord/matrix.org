@@ -15,7 +15,7 @@ This is no mean feat - the migration shifted all 45M access tokens and 110M user
 
 ## What does this mean for you?
 
-Check back to our [previous announcement](https://matrix.org/blog/2025/04/matrix-auth-service/) for the full details of migration, but your existing sessions remain active - no logging out and back in required.
+Check back to our [previous announcement](/blog/2025/04/matrix-auth-service/) for the full details of migration, but your existing sessions remain active - no logging out and back in required.
 
 The move to MAS provides enormous improvements to security and usability:
 

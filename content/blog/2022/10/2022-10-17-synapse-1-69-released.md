@@ -15,7 +15,7 @@ out of the oven. But before we take a look at it, here's a quick announcement:
 
 > We have recently disclosed a moderate severity security vulnerability, which
 > was fixed in [Synapse
-> 1.62](https://matrix.org/blog/2022/07/06/synapse-1-62-released/) (released on
+> 1.62](/blog/2022/07/06/synapse-1-62-released/) (released on
 > July 5th 2022). This issue affects all homeservers running a version of
 > Synapse older than 1.62 with open federation. If this is the case for your
 > deployment, please update to a more recent version of Synapse at your earliest
@@ -49,7 +49,7 @@ given set of arguments can be done using [`ModuleApi.invalidate_cache`](https://
 ## Upcoming removal of deprecated Prometheus metric names
 
 Back in [Synapse
-1.2](https://matrix.org/blog/2019/07/25/synapse-1-2-0-released), we deprecated a
+1.2](/blog/2019/07/25/synapse-1-2-0-released), we deprecated a
 number of Prometheus metrics, to replace them with more aptly named equivalents
 that fit existing naming conventions better.
 

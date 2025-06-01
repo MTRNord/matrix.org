@@ -10,7 +10,7 @@ category = ["Releases", "Spec"]
 
 Hey all,
 
-[Matrix 1.6](https://spec.matrix.org/v1.6/) is out there! Like Matrix 1.5 [back in November](https://matrix.org/blog/2022/11/17/matrix-v-1-5-release), this release is largely a maintenance update. Matrix 1.1 through 1.4 have been relatively major upgrades, so a little time between features doesn’t feel like a bad idea :)
+[Matrix 1.6](https://spec.matrix.org/v1.6/) is out there! Like Matrix 1.5 [back in November](/blog/2022/11/17/matrix-v-1-5-release), this release is largely a maintenance update. Matrix 1.1 through 1.4 have been relatively major upgrades, so a little time between features doesn’t feel like a bad idea :)
 
 As with all spec releases, we encourage implementations to gradually update over the next few months rather than have support for everything on release day - please be kind to the projects you use, and help them gain support if able.
 
@@ -31,9 +31,9 @@ Primarily part of the [Gitter feature parity project](https://github.com/vector-
 
 _Matrix is going voom_
 
-[Synapse 1.76](https://matrix.org/blog/2023/01/31/synapse-1-76-released) enabled faster joins by default, and while there’s a lot of Python going into making joins as fast as possible, the specification side is a relatively small change at the moment: [just don’t send as many events during joins](https://spec.matrix.org/v1.6/server-server-api/#put_matrixfederationv2send_joinroomideventid) (`omit_members`).
+[Synapse 1.76](/blog/2023/01/31/synapse-1-76-released) enabled faster joins by default, and while there’s a lot of Python going into making joins as fast as possible, the specification side is a relatively small change at the moment: [just don’t send as many events during joins](https://spec.matrix.org/v1.6/server-server-api/#put_matrixfederationv2send_joinroomideventid) (`omit_members`).
 
-There’s potentially more work on the horizon for making faster joins even faster and more robust, and some of that might involve spec work: keep an eye on Synapse releases and [TWIM](https://matrix.org/blog/category/this-week-in-matrix) for updates as we make our way to faster joins in Matrix 2.0 :)
+There’s potentially more work on the horizon for making faster joins even faster and more robust, and some of that might involve spec work: keep an eye on Synapse releases and [TWIM](/blog/category/this-week-in-matrix) for updates as we make our way to faster joins in Matrix 2.0 :)
 
 
 ## The full changelog

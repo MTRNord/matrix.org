@@ -40,6 +40,6 @@ Even with all that support though, we ran The Matrix Conference at a loss. It’
 
 Because not only did The Matrix Conference create opportunities to connect across the ecosystem, learn from each other’s experiences, recruit talent, make deals, and convene the Governing Board… It also fostered our sense of community, harmonized our efforts, and laid the groundwork to ensure Matrix is a stable, modern protocol that we can all rely on far into the future.
 
-We need your help building on that groundwork to secure the future of Matrix. [Join the Foundation as a funding member](https://matrix.org/support/), and [secure your sponsorship of next year’s conference](https://2024.matrix.org/sponsor/) which will be held in Strasbourg, France in the autumn of 2025 – if we can hit our funding targets.
+We need your help building on that groundwork to secure the future of Matrix. [Join the Foundation as a funding member](/support/), and [secure your sponsorship of next year’s conference](https://2024.matrix.org/sponsor/) which will be held in Strasbourg, France in the autumn of 2025 – if we can hit our funding targets.
 
 And with any luck, together we’ll produce an even better and more valuable event for the ecosystem in 2025!

@@ -27,7 +27,7 @@ We’ve ended up just listing them in a quick, high level, Myth Debunking exerci
 * **MYTH #1 -** "It is impossible to have a standard that is open, decentralized and secure at the same time"  
 ⇒ **false**: HTTPS did it, Matrix did it.
 * **MYTH #2 -** "It is difficult and expensive to make existing services compatible with a standard"  
-⇒ **false**: [Gitter was integrated into Matrix in less than a month](https://matrix.org/blog/2020/12/07/gitter-now-speaks-matrix#how-do-you-make-an-existing-chat-system-talk-matrix), with a single developer
+⇒ **false**: [Gitter was integrated into Matrix in less than a month](/blog/2020/12/07/gitter-now-speaks-matrix#how-do-you-make-an-existing-chat-system-talk-matrix), with a single developer
 * **MYTH #3 -** "Interoperability is incompatible with end-to-end encryption"  
 ⇒ **false**: services just have to speak the same language, email has proved this with S/MIME and PGP - where different vendors can and do interoperate with E2EE. It’s even better when the protocol is E2EE by default.
 * **MYTH #4 -** "It may work for messaging, but less so for social networks"  

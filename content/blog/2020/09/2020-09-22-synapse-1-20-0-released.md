@@ -29,7 +29,8 @@ Synapse 1.20.0 (2020-09-22)
 No significant changes since v1.20.0rc5.
 
 Removal warning
----------------
+---
+------------
 
 Historically, the [Synapse Admin API](https://github.com/matrix-org/synapse/tree/master/docs) has been accessible under the `/_matrix/client/api/v1/admin`, `/_matrix/client/unstable/admin`, `/_matrix/client/r0/admin` and `/_synapse/admin` prefixes. In a future release, we will be dropping support for accessing Synapse's Admin API using the `/_matrix/client/*` prefixes. This makes it easier for homeserver admins to lock down external access to the Admin API endpoints.
 
@@ -81,7 +82,7 @@ Synapse 1.20.0rc1 (2020-09-08)
 Removal warning
 ---------------
 
-Some older clients used a [disallowed character](https://matrix.org/docs/spec/client_server/r0.6.1#post-matrix-client-r0-register-email-requesttoken) (`:`) in the `client_secret` parameter of various endpoints. The incorrect behaviour was allowed for backwards compatibility, but is now being removed from Synapse as most users have updated their client. Further context can be found at [\#6766](https://github.com/matrix-org/synapse/issues/6766).
+Some older clients used a [disallowed character](/docs/spec/client_server/r0.6.1#post-matrix-client-r0-register-email-requesttoken) (`:`) in the `client_secret` parameter of various endpoints. The incorrect behaviour was allowed for backwards compatibility, but is now being removed from Synapse as most users have updated their client. Further context can be found at [\#6766](https://github.com/matrix-org/synapse/issues/6766).
 
 Features
 --------

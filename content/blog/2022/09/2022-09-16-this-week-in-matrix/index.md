@@ -23,7 +23,7 @@ category = ["This Week in Matrix"]
 
 [Andrew Morgan (anoa)](https://matrix.to/#/@andrewm:element.io) reports
 
-> Here's your weekly spec update! The heart of Matrix is the specification - and this is modified by Matrix Spec Change (MSC) proposals. Learn more about how the process works at <https://matrix.org/docs/spec/proposals>.
+> Here's your weekly spec update! The heart of Matrix is the specification - and this is modified by Matrix Spec Change (MSC) proposals. Learn more about how the process works at </docs/spec/proposals>.
 >
 > ## MSC Status
 >
@@ -73,9 +73,9 @@ Synapse is a Matrix homeserver implementation developed by the matrix.org core t
 
 [Brendan Abolivier](https://matrix.to/#/@babolivier:element.io) announces
 
-> This week we've released [Synapse 1.67](https://matrix.org/blog/2022/09/14/synapse-1-67-released/)! This Synapse release is the first one to use [Poetry 1.2](https://python-poetry.org/blog/announcing-poetry-1.2.0/), and also removes the long-deprecated TCP-based replication protocol. Synapse workers are now required to use the Redis-based protocol which we introduced back in 2020. If this isn't already the case for your deployment of Synapse, see the [documentation for workers](https://matrix-org.github.io/synapse/v1.67/workers.html#shared-configuration) as well as the [upgrade notes](https://matrix-org.github.io/synapse/v1.67/upgrade.html#direct-tcp-replication-is-no-longer-supported-migrate-to-redis), to update your configuration.
+> This week we've released [Synapse 1.67](/blog/2022/09/14/synapse-1-67-released/)! This Synapse release is the first one to use [Poetry 1.2](https://python-poetry.org/blog/announcing-poetry-1.2.0/), and also removes the long-deprecated TCP-based replication protocol. Synapse workers are now required to use the Redis-based protocol which we introduced back in 2020. If this isn't already the case for your deployment of Synapse, see the [documentation for workers](https://matrix-org.github.io/synapse/v1.67/workers.html#shared-configuration) as well as the [upgrade notes](https://matrix-org.github.io/synapse/v1.67/upgrade.html#direct-tcp-replication-is-no-longer-supported-migrate-to-redis), to update your configuration.
 >
-> In other news, Synapse 1.68 (which is due to release on the 27th of September) will introduce a couple of changes in dependencies. The minimum supported SQLite version will be raised to 3.26, meaning that Synapse 1.67 is the last version of Synapse supporting SQLite versions 3.22 to 3.26. In addition to this, a Rust compiler will be required for source checkouts, as we are starting to introduce Rust code in Synapse (as I [mentioned last week](https://matrix.org/blog/2022/09/09/this-week-in-matrix-2022-09-09#synapse-website)). This latter change should not impact installations that use `pip install matrix-synapse`, Debian packages from `packages.matrix.org` or the `matrixdotorg/synapse` Docker image to manage and run Synapse. See the [upgrade notes](https://matrix-org.github.io/synapse/v1.67/upgrade.html#rust-requirement-in-the-next-release) for more information about these two changes.
+> In other news, Synapse 1.68 (which is due to release on the 27th of September) will introduce a couple of changes in dependencies. The minimum supported SQLite version will be raised to 3.26, meaning that Synapse 1.67 is the last version of Synapse supporting SQLite versions 3.22 to 3.26. In addition to this, a Rust compiler will be required for source checkouts, as we are starting to introduce Rust code in Synapse (as I [mentioned last week](/blog/2022/09/09/this-week-in-matrix-2022-09-09#synapse-website)). This latter change should not impact installations that use `pip install matrix-synapse`, Debian packages from `packages.matrix.org` or the `matrixdotorg/synapse` Docker image to manage and run Synapse. See the [upgrade notes](https://matrix-org.github.io/synapse/v1.67/upgrade.html#rust-requirement-in-the-next-release) for more information about these two changes.
 
 ## Homeserver Deployment 📥️
 

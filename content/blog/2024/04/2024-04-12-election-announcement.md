@@ -20,9 +20,9 @@ We’ll be doing our best to reach out to every constituent group to let them kn
 
 **_If you are interested in nominating someone – or yourself – to be a candidate in this election, read this post in its entirety._**
 
-To learn about what the Governing Board is, what it does, and the context it operates in, read this [blog post from last December](https://matrix.org/blog/2023/12/electing-our-first-governing-board/). You are also welcome to read [the Governing Board’s current bylaws](https://matrix.org/media/2024-04-governing-board-terms-of-reference.pdf).
+To learn about what the Governing Board is, what it does, and the context it operates in, read this [blog post from last December](/blog/2023/12/electing-our-first-governing-board/). You are also welcome to read [the Governing Board’s current bylaws](/media/2024-04-governing-board-terms-of-reference.pdf).
 
-[Go here for instructions on submitting a nomination!](https://matrix.org/blog/2024/04/election-announcement/#how-to-nominate)
+[Go here for instructions on submitting a nomination!](/blog/2024/04/election-announcement/#how-to-nominate)
 
 <!-- more -->
 
@@ -48,7 +48,7 @@ Here is the composition of seats on the Governing Board:
 |3 Ecosystem Members|3 Gold Members|2 Spec Core Team Members|
 |2 Associate Members|2 Silver Members|Managing Director|
 
-[Learn how to become a member](https://matrix.org/membership/) and [see a list of our current organizational members](https://matrix.org/support/).
+[Learn how to become a member](/membership/) and [see a list of our current organizational members](/support/).
 
 We will be seating candidates for all constituency groups in our first election. Starting in 2025, we’ll run elections for half of the constituency groups. This is so that we maintain some level of continuity and institutional knowledge across each election. Consequently, while the first elected representatives from the Guardians, Spec Core Team, Platinum, and Ecosystem Members will serve 2-year terms, the first elected representatives from Gold, Silver, Individual, and Associate Members will serve a 1-year term. We anticipate that many people in those constituencies who are elected this year will run for re-election in 2025.
 
@@ -56,13 +56,13 @@ We will be seating candidates for all constituency groups in our first election.
 
 There are currently no term limits, but term limits are a best practice in open governance so we intend to introduce them as we find our collective footing.
 
-For greater detail, [please read this blog post from last December](https://matrix.org/blog/2023/12/electing-our-first-governing-board/).
+For greater detail, [please read this blog post from last December](/blog/2023/12/electing-our-first-governing-board/).
 
 ## Who can nominate
 
 You must be a member of one of the constituency groups in order to nominate yourself or someone else to be a candidate in the election. By far our largest constituency group are Individual Members, who number in the 100’s. If you have donated at least $60 USD to the Foundation since April 20, 2023, on any of Donorbox, Patreon, or Liberapay, then you are eligible to nominate and vote.
 
-All nominees must have consented to nomination _before being nominated_ and must be a community member in good standing. That means they must have a clean track record with respect to our [Code of Conduct](https://matrix.org/legal/code-of-conduct/). We want our Governing Board to be a clearing house for a variety of priorities and perspectives, and to be able to hold space for each other even when there are disagreements.
+All nominees must have consented to nomination _before being nominated_ and must be a community member in good standing. That means they must have a clean track record with respect to our [Code of Conduct](/legal/code-of-conduct/). We want our Governing Board to be a clearing house for a variety of priorities and perspectives, and to be able to hold space for each other even when there are disagreements.
 
 ## Who can vote
 
@@ -83,7 +83,7 @@ If you want to be a candidate in the election, there are a few things you should
 * Candidates who are nominated by an organizational member will have their affiliation listed.
 * We expect candidates to provide a short bio and a short statement, collectively covering qualifications and priorities.
 * You are encouraged to make yourself available for conversation with members of your constituency group.
-* The period for campaigning runs from April 27th to May 17th. Please note our [community Code of Conduct](https://matrix.org/legal/code-of-conduct/) while campaigning.
+* The period for campaigning runs from April 27th to May 17th. Please note our [community Code of Conduct](/legal/code-of-conduct/) while campaigning.
 
 ## What to expect if you win
 
@@ -101,7 +101,7 @@ We intend to charter committees – such as for finance, which would review our 
 
 ## How to nominate
 
-Please [use this Cryptpad form to nominate for the Governing Board elections](https://cryptpad.fr/form/#/2/form/view/Fjksk0AMwLWnp4T6t+tTsmNoWSMsJJg8jLXdPzIGkpc/). If you are unable to use the form, please refer to [this nomination document](https://matrix.org/media/2024-nomination-form.pdf) and email your responses to [elections@foundation.matrix.org](mailto:elections@foundation.matrix.org).
+Please [use this Cryptpad form to nominate for the Governing Board elections](https://cryptpad.fr/form/#/2/form/view/Fjksk0AMwLWnp4T6t+tTsmNoWSMsJJg8jLXdPzIGkpc/). If you are unable to use the form, please refer to [this nomination document](/media/2024-nomination-form.pdf) and email your responses to [elections@foundation.matrix.org](mailto:elections@foundation.matrix.org).
 
 All nominations are subject to review in accordance with our bylaws. We will email you to confirm receipt within 2 business days, and we will publish our elections landing page with all of the nominees, and other details, by April 27th.
 

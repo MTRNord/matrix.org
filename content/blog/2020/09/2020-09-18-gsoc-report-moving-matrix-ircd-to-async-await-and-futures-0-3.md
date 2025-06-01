@@ -12,7 +12,8 @@ This is part of a series of reports on the [*six* projects](https://summerofcode
 
 [View project: Moving `matrix-ircd` to async/await and `futures` 0.3](https://summerofcode.withgoogle.com/organizations/6060943798173696/#5911643604647936)
 
-----
+---
+-
 
 The goal of this project was to port `matrix-ircd` from the outdated combinators style of `futures` 0.1 to the new-and-improved style of `futures` 0.3. As initially proposed, this greatly improves code readability and removes the convoluted compiler errors that were pervasive in `futures` 0.1
 
@@ -40,7 +41,7 @@ Lastly, In [#77](https://github.com/matrix-org/matrix-ircd/pull/77) I included m
 
 ## Remaining Work
 
-Based on my personal testing there is _no additional work_ to be done in the realm of updating to async/await. All tests pass and the IRC server and matrix bridge function as expected. @jplatte kindly announced in the [This Week In Matrix](https://matrix.org/blog/category/this-week-in-matrix#matrix-ircd---call-for-testing) blog that we will be conducting public testing of the `async_await` branch on github. Barring any issues the async/await code should be merged into the master branch in the next few weeks.
+Based on my personal testing there is _no additional work_ to be done in the realm of updating to async/await. All tests pass and the IRC server and matrix bridge function as expected. @jplatte kindly announced in the [This Week In Matrix](/blog/category/this-week-in-matrix#matrix-ircd---call-for-testing) blog that we will be conducting public testing of the `async_await` branch on github. Barring any issues the async/await code should be merged into the master branch in the next few weeks.
 
 ### Pull request list
 

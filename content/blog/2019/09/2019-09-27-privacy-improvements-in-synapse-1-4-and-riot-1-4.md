@@ -10,7 +10,7 @@ category = ["Privacy", "Tech"]
 Hi all,
 
 Back in June we wrote about our [plans to tighten up data
-privacy](https://matrix.org/blog/2019/06/30/tightening-up-privacy-in-matrix)
+privacy](/blog/2019/06/30/tightening-up-privacy-in-matrix)
 in Matrix after some areas for improvement were brought to our attention.  To
 quickly recap: the primary concern was that the default config for Riot
 specifies identity servers and integration managers run by New Vector (the
@@ -105,7 +105,7 @@ All of this is implemented in Riot/Web 1.4.0 and Synapse 1.4.0.  Riot/Web
 for Synapse 1.4 (1.4.0rc1) today which fully ship on Monday.
 
 For full details please go check out the [Riot 1.4.0](https://medium.com/@RiotChat/new-privacy-controls-for-riot-dc3661888563)
-and [Synapse 1.4.0](https://matrix.org/blog/2019/10/03/synapse-1-4-0-released) blog posts.
+and [Synapse 1.4.0](/blog/2019/10/03/synapse-1-4-0-released) blog posts.
 
 Riot/Mobile is following fast behind - most of the above has been implemented
 and everything should land in the next release.  RiotX/Android doesn’t really
@@ -117,9 +117,9 @@ new Matrix Spec Changes (MSC) have been required as part of the project.  In
 particular, this results in a massive update to the Identity Service API,
 which will be released very shortly with the new MSCs.  You can see the
 upcoming changes on the [unstable
-branch](https://matrix.org/docs/spec/identity_service/unstable) and compare
+branch](/docs/spec/identity_service/unstable) and compare
 with the [previous 0.2.1 stable
-release](https://matrix.org/docs/spec/identity_service/r0.2.1), as well as
+release](/docs/spec/identity_service/r0.2.1), as well as
 checking the detailed MSCs as follows:
 
 *   [MSC1961: Integration manager authentication APIs](https://github.com/matrix-org/matrix-doc/pull/1961)

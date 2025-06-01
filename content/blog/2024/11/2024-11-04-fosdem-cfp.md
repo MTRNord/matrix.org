@@ -53,6 +53,6 @@ If you have any questions about the CoC or wish to have one of the devroom organ
 
 Proposals must be submitted on FOSDEM's conference management system: <https://pretalx.fosdem.org/>. Heads up that last year FOSDEM shelved the good old Pentabarf in favour of Pretalx. All submissions must go through Pretalx: <https://pretalx.fosdem.org/fosdem-2025/cfp>. When submitting a proposal, make sure to select the Matrix.org Foundation & Community track.
 
-We expect to receive more requests than we have slots available. The devroom organisers will be reviewing the proposals and accepting them based on the potential positive impact the project has on Matrix, as defined in the Mission section of <https://matrix.org/foundation>.
+We expect to receive more requests than we have slots available. The devroom organisers will be reviewing the proposals and accepting them based on the potential positive impact the project has on Matrix, as defined in the Mission section of </foundation>.
 
 If a project proposal has been turned down, it doesn't mean we don't believe it has good potential. Maintainers are invited to join the [#twim:matrix.org](https://matrix.to/#/#twim:matrix.org) Matrix room to give it some visibility.

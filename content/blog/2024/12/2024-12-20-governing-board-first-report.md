@@ -59,7 +59,7 @@ Probably the decision with the biggest impact (thought we agreed it fairly
 quickly) was around the hierarchy of the GB, so let’s expand on that a bit.
 
 As we reported in TWIM [at the
-time](https://matrix.org/blog/2024/11/15/this-week-in-matrix-2024-11-15/#first-official-governing-board-meeting),
+time](/blog/2024/11/15/this-week-in-matrix-2024-11-15/#first-official-governing-board-meeting),
 we have convened 4 initial Committees (Governance, Trust & Safety, Community,
 and Finance & Fundraising), and these are board-level subgroups with a focus on
 that specific area. Each Committee will have one or more Working Groups (WG)
@@ -113,7 +113,7 @@ room](https://matrix.to/#/#governing-board-office:matrix.org), but many of the
 GB will also be [present at
 FOSDEM](https://fosdem.org/2025/schedule/event/fosdem-2025-6236-matrix-state-of-the-union/)
 as well as being at the [Friday Matrix
-event](https://matrix.org/blog/2024/11/matrix-fosdem-full-force/) - please talk
+event](/blog/2024/11/matrix-fosdem-full-force/) - please talk
 to us, bring us your thoughts, tell us your worries. We’ll do what we can to
 help.
 

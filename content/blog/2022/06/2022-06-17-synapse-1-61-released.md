@@ -19,10 +19,10 @@ If you are new to Matrix, you might have not heard of the feature referred to as
 grouping rooms and users to better represent a community, one of which being
 `+matrix:matrix.org` which used to represent the Matrix community. This may
 sound similar to [Matrix
-Spaces](https://matrix.org/blog/2021/05/17/the-matrix-space-beta), and it would
+Spaces](/blog/2021/05/17/the-matrix-space-beta), and it would
 make sense since Spaces are meant to be a more powerful replacement for groups.
 
-In [Synapse 1.56](https://matrix.org/blog/2022/04/05/synapse-1-56-released),
+In [Synapse 1.56](/blog/2022/04/05/synapse-1-56-released),
 support for groups was deprecated, with a plan to fully remove it in a
 later release of Synapse. This has now been done as of Synapse 1.61, and most of the
 code supporting this feature has now been removed.

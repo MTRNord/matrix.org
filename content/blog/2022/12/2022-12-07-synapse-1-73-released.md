@@ -14,13 +14,13 @@ And here is another update to your beloved Matrix homeserver implementation, [Sy
 
 ### Legacy Prometheus metric names removed
 
-When releasing [Synapse 1.69](https://matrix.org/blog/2022/10/17/synapse-1-69-released#upcoming-removal-of-deprecated-prometheus-metric-names)
+When releasing [Synapse 1.69](/blog/2022/10/17/synapse-1-69-released#upcoming-removal-of-deprecated-prometheus-metric-names)
 a couple of months ago, we also announced the removal of old Prometheus metrics that have been replaced by more aptly named ones. 
 he list of these metrics can be found [here](https://matrix-org.github.io/synapse/v1.73/metrics-howto.html#renaming-of-metrics--deprecation-of-old-names-in-12).
 
 Synapse 1.73 implements the final phase of this plan and entirely removes support for those metrics. As a result,
 the `enable_legacy_metrics` configuration option, which was introduced in
-[Synapse 1.71](https://matrix.org/blog/2022/11/22/synapse-1-72-released#announcements), has also been removed.
+[Synapse 1.71](/blog/2022/11/22/synapse-1-72-released#announcements), has also been removed.
 
 Server administrators who are still relying on these legacy metric names are encouraged to update their dashboards at their earliest convenience.
 For more information, please refer to the [upgrade notes](https://matrix-org.github.io/synapse/v1.73/upgrade#legacy-prometheus-metric-names-have-now-been-removed).

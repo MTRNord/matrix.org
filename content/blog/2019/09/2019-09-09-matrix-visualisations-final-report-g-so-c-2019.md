@@ -24,10 +24,10 @@ However, this is [the repository](https://github.com/Kagamihime/matrix-visualisa
 
 ### Complete the implementation of the CS API backend
 
-During the application period, I wrote a prototype for this project. This prototype implemented some requests to the CS API (like [/login](https://matrix.org/docs/spec/client_server/r0.5.0#get-matrix-client-r0-login), [/logout](https://matrix.org/docs/spec/client_server/r0.5.0#post-matrix-client-r0-logout) or [/sync](https://matrix.org/docs/spec/client_server/r0.5.0#get-matrix-client-r0-sync)) but there were more requests to implement in order to be able to fully use this API:
-* In order for the application to automatically join (and leave at the end) a room if the provided account hasn’t already joined it, I implemented the requests to [/joined_rooms](https://matrix.org/docs/spec/client_server/r0.5.0#get-matrix-client-r0-joined-rooms), [/join](https://matrix.org/docs/spec/client_server/r0.5.0#post-matrix-client-r0-rooms-roomid-join) and [/leave](https://matrix.org/docs/spec/client_server/r0.5.0#post-matrix-client-r0-rooms-roomid-leave).
-* The request [/messages](https://matrix.org/docs/spec/client_server/r0.5.0#get-matrix-client-r0-rooms-roomid-messages) has been implemented to allow the application to fetch previous messages.
-* For retrieving in real-time new events, I used the field `from` in the [/sync](https://matrix.org/docs/spec/client_server/r0.5.0#get-matrix-client-r0-sync) request.
+During the application period, I wrote a prototype for this project. This prototype implemented some requests to the CS API (like [/login](/docs/spec/client_server/r0.5.0#get-matrix-client-r0-login), [/logout](/docs/spec/client_server/r0.5.0#post-matrix-client-r0-logout) or [/sync](/docs/spec/client_server/r0.5.0#get-matrix-client-r0-sync)) but there were more requests to implement in order to be able to fully use this API:
+* In order for the application to automatically join (and leave at the end) a room if the provided account hasn’t already joined it, I implemented the requests to [/joined_rooms](/docs/spec/client_server/r0.5.0#get-matrix-client-r0-joined-rooms), [/join](/docs/spec/client_server/r0.5.0#post-matrix-client-r0-rooms-roomid-join) and [/leave](/docs/spec/client_server/r0.5.0#post-matrix-client-r0-rooms-roomid-leave).
+* The request [/messages](/docs/spec/client_server/r0.5.0#get-matrix-client-r0-rooms-roomid-messages) has been implemented to allow the application to fetch previous messages.
+* For retrieving in real-time new events, I used the field `from` in the [/sync](/docs/spec/client_server/r0.5.0#get-matrix-client-r0-sync) request.
 
 I also did a lot of clean up in the source code from the prototype during this task. You can have more details in [this PR](https://github.com/Kagamihime/matrix-visualisations/pull/1).
 
@@ -74,11 +74,11 @@ You can have a look at the details of the implementation in [this PR](https://gi
 
 The next major task I had to do was the implementation of a backend for retrieving events via the Federation API. I thought a lot about the possible options for the location of this backend and I decided to extend the web server created for the PostgreSQL Synapse backend, so that we could launch it in a “postgres mode” or “federation mode”. But the backend would offer the same HTTP API in both modes.
 
-The backend uses [the Federation API](https://matrix.org/docs/spec/server_server/r0.1.3) in the following way:
-* Before being able to retrieve events from a certain room, the backend must join it with [/make_join](https://matrix.org/docs/spec/server_server/r0.1.3#get-matrix-federation-v1-make-join-roomid-userid) and [/send_join](https://matrix.org/docs/spec/server_server/r0.1.3#put-matrix-federation-v1-send-join-roomid-eventid) requests, it creates an “imaginary user” in this room. The join event created during this process will be the one returned by the endpoint `/deepest`.
-* To get earlier events, the backend uses [/backfill](https://matrix.org/docs/spec/server_server/r0.1.3#get-matrix-federation-v1-backfill-roomid) requests.
-* In order to get new events, the backend listens for pushed events from other HS’s with the [/send](https://matrix.org/docs/spec/server_server/r0.1.3#put-matrix-federation-v1-send-txnid) request.
-* When the observation is done, the backend makes the “imaginary user” leave the room by sending [/make_leave](https://matrix.org/docs/spec/server_server/r0.1.3#get-matrix-federation-v1-make-leave-roomid-userid) and [/send_leave](https://matrix.org/docs/spec/server_server/r0.1.3#put-matrix-federation-v1-send-leave-roomid-eventid) requests.
+The backend uses [the Federation API](/docs/spec/server_server/r0.1.3) in the following way:
+* Before being able to retrieve events from a certain room, the backend must join it with [/make_join](/docs/spec/server_server/r0.1.3#get-matrix-federation-v1-make-join-roomid-userid) and [/send_join](/docs/spec/server_server/r0.1.3#put-matrix-federation-v1-send-join-roomid-eventid) requests, it creates an “imaginary user” in this room. The join event created during this process will be the one returned by the endpoint `/deepest`.
+* To get earlier events, the backend uses [/backfill](/docs/spec/server_server/r0.1.3#get-matrix-federation-v1-backfill-roomid) requests.
+* In order to get new events, the backend listens for pushed events from other HS’s with the [/send](/docs/spec/server_server/r0.1.3#put-matrix-federation-v1-send-txnid) request.
+* When the observation is done, the backend makes the “imaginary user” leave the room by sending [/make_leave](/docs/spec/server_server/r0.1.3#get-matrix-federation-v1-make-leave-roomid-userid) and [/send_leave](/docs/spec/server_server/r0.1.3#put-matrix-federation-v1-send-leave-roomid-eventid) requests.
 
 The full details of the implementation are in [this PR](https://github.com/Kagamihime/matrix-visualisations-backend/pull/8). My mentor also helped me get the usage of the `Future`s  right thanks to [this PR](https://github.com/Kagamihime/matrix-visualisations-backend/pull/7).<br/>
 There has been a small modification in the frontend too, because of the addition of the `/stop` endpoint in the backend’s HTTP API, these modifications are in [this PR](https://github.com/Kagamihime/matrix-visualisations/pull/7).

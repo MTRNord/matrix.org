@@ -11,7 +11,7 @@ Hi all,
 
 Over the last few days we've seen a distributed spam attack across the public Matrix network, where large numbers of spambots have been registered across servers with open registration and then used to flood abusive traffic into rooms such as Matrix HQ.
 
-The spam itself has been handled by [temporarily banning the abused servers](https://matrix.org/docs/guides/moderation#banning-servers). However, on Monday and Tuesday the volume of traffic triggered performance problems for the homeservers participating in targeted rooms (e.g. memory explosions, or very delayed federation).  This was due to a combination of factors, but one of the most important ones was Synapse issue [#9490](https://github.com/matrix-org/synapse/issues/9490): that one busy room could cause head-of-line blocking, starving your server from processing events in other rooms, causing all traffic to fall behind.
+The spam itself has been handled by [temporarily banning the abused servers](/docs/guides/moderation#banning-servers). However, on Monday and Tuesday the volume of traffic triggered performance problems for the homeservers participating in targeted rooms (e.g. memory explosions, or very delayed federation).  This was due to a combination of factors, but one of the most important ones was Synapse issue [#9490](https://github.com/matrix-org/synapse/issues/9490): that one busy room could cause head-of-line blocking, starving your server from processing events in other rooms, causing all traffic to fall behind.
 
 We're happy to say that Synapse 1.37.1 [fixes this](https://github.com/matrix-org/synapse/pull/10272) and we now process inbound federation traffic asynchronously, ensuring that one busy room won't impact others.  First impressions are that this has significantly improved federation performance and end-to-end encryption stability — for instance, new E2EE keys from remote users for a given conversation should arrive immediately rather than being blocked behind other traffic.
 
@@ -64,7 +64,7 @@ We've also resolved two bugs which could cause sync requests to immediately retu
 
 ### Everything Else
 
-Lastly, we've merged an experimental implementation of [MSC2716: Incrementally importing history into existing rooms](https://github.com/matrix-org/matrix-doc/pull/2716) ([#9247](https://github.com/matrix-org/synapse/pull/9247)) as part of Element's work to fully [integrate Gitter into Matrix](https://matrix.org/blog/2020/09/30/welcoming-gitter-to-matrix).
+Lastly, we've merged an experimental implementation of [MSC2716: Incrementally importing history into existing rooms](https://github.com/matrix-org/matrix-doc/pull/2716) ([#9247](https://github.com/matrix-org/synapse/pull/9247)) as part of Element's work to fully [integrate Gitter into Matrix](/blog/2020/09/30/welcoming-gitter-to-matrix).
 
 These are just the highlights; please see the [Upgrade Information](https://github.com/matrix-org/synapse/blob/v1.37.1/UPGRADE.rst#upgrading-to-v1370) and [Release Notes](https://github.com/matrix-org/synapse/blob/v1.37.1/CHANGES.md) for a complete list of changes in this release.
 

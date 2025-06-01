@@ -11,9 +11,9 @@ Hi all,
 
 Over the last few weeks we’ve ended up getting a lot of attention from the security research community, which has been incredibly useful and massively appreciated in terms of contributions to improve the security of the reference Matrix implementations.
 
-We’ve also set up an official [Security Disclosure Policy](https://matrix.org/security-disclosure-policy/) to explain the process of reporting security issues to us safely via responsible disclosure - including a Hall of Fame to credit those who have done so.  (Please mail [security@matrix.org](mailto:security@matrix.org) to remind us if we’ve forgotten you!).
+We’ve also set up an official [Security Disclosure Policy](/security-disclosure-policy/) to explain the process of reporting security issues to us safely via responsible disclosure - including a Hall of Fame to credit those who have done so.  (Please mail [security@matrix.org](mailto:security@matrix.org) to remind us if we’ve forgotten you!).
 
-Since we published the Hall of Fame yesterday, we’ve already been getting new entries and so we’re doing a set of security releases today to ensure they are mitigated asap.  Unfortunately the work around this means that we’re running late in publishing the post mortem of the [Apr 11 security incident](https://matrix.org/blog/2019/04/11/security-incident) - we are trying to get that out as soon as we can.
+Since we published the Hall of Fame yesterday, we’ve already been getting new entries and so we’re doing a set of security releases today to ensure they are mitigated asap.  Unfortunately the work around this means that we’re running late in publishing the post mortem of the [Apr 11 security incident](/blog/2019/04/11/security-incident) - we are trying to get that out as soon as we can.
 
 ## Sydent 1.0.3
 

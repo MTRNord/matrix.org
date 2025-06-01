@@ -63,4 +63,4 @@ More surprisingly, I spotted a certain number of people sitting down in the hall
 
 ## You’re making this possible
 
-This event was an enormous morale booster for the whole team, but we couldn’t make Matrix in the first place without your support. Whether you are an individual or an organisation who benefits from Matrix, please consider [supporting the Foundation financially](https://matrix.org/support/) or [becoming a member](https://matrix.org/membership/) to steer it in a direction that makes sense for you.
+This event was an enormous morale booster for the whole team, but we couldn’t make Matrix in the first place without your support. Whether you are an individual or an organisation who benefits from Matrix, please consider [supporting the Foundation financially](/support/) or [becoming a member](/membership/) to steer it in a direction that makes sense for you.

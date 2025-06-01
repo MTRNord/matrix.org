@@ -35,7 +35,7 @@ to ensure the resilience of the tech which you rely on for the success of your
 business? Become a member, and ensure the core development is funded and that
 Matrix is here to thrive.
 
-Are you about to be designated a gatekeeper by the EU, and have to rapidly figure out how to implement [DMA-compliant interoperability](https://matrix.org/blog/2022/03/29/how-do-you-implement-interoperability-in-a-dma-world) (complete with end-to-end encryption compatibility) into your services? Become a member, and discover how Matrix can solve all your problems, while providing your input too. 
+Are you about to be designated a gatekeeper by the EU, and have to rapidly figure out how to implement [DMA-compliant interoperability](/blog/2022/03/29/how-do-you-implement-interoperability-in-a-dma-world) (complete with end-to-end encryption compatibility) into your services? Become a member, and discover how Matrix can solve all your problems, while providing your input too. 
 
 Are you looking to implement DMA interoperability but don't fall into the gatekeeper designation? Become a member, and help ensure Matrix fits your needs too!
 

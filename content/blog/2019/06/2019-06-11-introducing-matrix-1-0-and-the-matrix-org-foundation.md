@@ -16,7 +16,7 @@ Hi all,
 
 We are very excited to announce the first fully stable release of the Matrix protocol and specification across **all** APIs - as well as the Synapse 1.0 reference implementation which implements the full Matrix 1.0 API surface.
 
-This means that after just over 5 years since the initial work on Matrix began, we are proud to have finally **exited beta**!!  This is the conclusion of the work which we announced at [FOSDEM 2019](https://matrix.org/blog/2019/02/04/matrix-at-fosdem-2019) when we cut the first stable release of the Server-Server API and began the Synapse 0.99 release series in anticipation of releasing a 1.0.
+This means that after just over 5 years since the initial work on Matrix began, we are proud to have finally **exited beta**!!  This is the conclusion of the work which we announced at [FOSDEM 2019](/blog/2019/02/04/matrix-at-fosdem-2019) when we cut the first stable release of the Server-Server API and began the Synapse 0.99 release series in anticipation of releasing a 1.0.
 
 Now, before you get too excited, it’s critical to understand that Matrix 1.0 is all about providing a **stable, self-consistent, self-contained and secure version of the standard** which anyone should be able to use to independently implement production-grade Matrix clients, servers, bots and bridges etc.  It does **not** mean that all planned or possible features in Matrix are now specified and implemented, but that the most important core of the protocol is a well-defined stable platform for everyone to build on.
 
@@ -24,9 +24,9 @@ On the Synapse side, our focus has been exclusively on ensuring that Synapse cor
 
 All this means that the main headline features which land in Matrix 1.0 are vitally important but relatively dry:
 
-*   Using X.509 certificates to trust servers rather than perspective notaries, to simplify and improve server-side trust.  This is a **breaking change** across Matrix, and we’ve given the community several months now to ensure their homeservers run a valid TLS certificate.  See [MSC1711](https://github.com/matrix-org/synapse/blob/master/docs/MSC1711_certificates_FAQ.md) for full details, and the [2 week warning](https://matrix.org/blog/2019/05/24/final-countdown-to-1-0) we gave.  As of ~9am UTC today, the matrix.org homeserver is running Synapse 1.0 and enforcing valid TLS certificates - the transition has begun (and so far we haven’t spotted any major breakage :).  Thank you to everyone who [got ready](https://arewereadyyet.com) in advance!
+*   Using X.509 certificates to trust servers rather than perspective notaries, to simplify and improve server-side trust.  This is a **breaking change** across Matrix, and we’ve given the community several months now to ensure their homeservers run a valid TLS certificate.  See [MSC1711](https://github.com/matrix-org/synapse/blob/master/docs/MSC1711_certificates_FAQ.md) for full details, and the [2 week warning](/blog/2019/05/24/final-countdown-to-1-0) we gave.  As of ~9am UTC today, the matrix.org homeserver is running Synapse 1.0 and enforcing valid TLS certificates - the transition has begun (and so far we haven’t spotted any major breakage :).  Thank you to everyone who [got ready](https://arewereadyyet.com) in advance!
 *   Using .well-known URIs to discover servers, in case you can’t get a valid TLS certificate for your server’s domain.
-*   Switching to **[room version 4](https://matrix.org/docs/spec/rooms/v4.html) by default** for creating new rooms.  This fixes the most important defects that the core room algorithm has historically encountered, particularly:
+*   Switching to **[room version 4](/docs/spec/rooms/v4.html) by default** for creating new rooms.  This fixes the most important defects that the core room algorithm has historically encountered, particularly:
     *   The new State Resolution algorithm to fix the [Hotel California bug](https://github.com/matrix-org/synapse/issues/2432) and many others: [State Resolution Reloaded](https://github.com/matrix-org/matrix-doc/issues/1442)
     *   [Collision resistant event IDs](https://github.com/matrix-org/matrix-doc/pull/1659)
 *   Specifying the ability to upgrade between room versions
@@ -83,7 +83,7 @@ There has been an absolutely enormous amount of work to pull Matrix 1.0 together
 
 Finally, as promised, alongside Matrix 1.0, we are very happy to announce the official launch of the finalised Matrix.org Foundation!
 
-This has been a long-running project to ensure that Matrix’s future is governed by a neutral non-profit custodian for the benefit of everyone in the Matrix ecosystem.  We started the process nearly a year ago back with the initial proposal [Towards Open Governance of Matrix.org](https://matrix.org/blog/2018/06/20/towards-open-governance-for-matrix-org), and then legally [incorporated the Foundation](https://matrix.org/blog/2018/10/29/introducing-the-matrix-org-foundation-part-1-of-2) in October, and published the [final governance proposal](https://github.com/matrix-org/matrix-doc/blob/matthew/msc1779/proposals/1779-open-governance.md) in January.
+This has been a long-running project to ensure that Matrix’s future is governed by a neutral non-profit custodian for the benefit of everyone in the Matrix ecosystem.  We started the process nearly a year ago back with the initial proposal [Towards Open Governance of Matrix.org](/blog/2018/06/20/towards-open-governance-for-matrix-org), and then legally [incorporated the Foundation](/blog/2018/10/29/introducing-the-matrix-org-foundation-part-1-of-2) in October, and published the [final governance proposal](https://github.com/matrix-org/matrix-doc/blob/matthew/msc1779/proposals/1779-open-governance.md) in January.
 
 As of today the Foundation is finalised and operational, and all the assets for Matrix.org have been transferred from [New Vector](https://vector.im) (the startup we formed in 2017 to hire the core Matrix team).  In fact you may already have seen Matrix.org Foundation notices popping up all over the Matrix codebase (as all of New Vector’s work on the public Matrix codebase for the foreseeable is being assigned to the Matrix.org Foundation).
 
@@ -105,7 +105,7 @@ We have started the Foundation with five Guardians - two being the original foun
 
 We’d like to offer a very warm welcome to the new Guardians, and thank them profusely for giving up their time to join the Foundation and help ensure Matrix stays on course for the years to come.
 
-For the full update on the Foundation, please check out the new website content at [https://matrix.org/foundation](https://matrix.org/foundation) which should tell you everything you could possibly want to know about the Foundation, the Guardians, the Foundation’s legal Articles of Association, and the day-to-day Rules which define the Open Governance process.
+For the full update on the Foundation, please check out the new website content at [/foundation](https://matrix.org/foundation) which should tell you everything you could possibly want to know about the Foundation, the Guardians, the Foundation’s legal Articles of Association, and the day-to-day Rules which define the Open Governance process.
 
 ## And finally…
 

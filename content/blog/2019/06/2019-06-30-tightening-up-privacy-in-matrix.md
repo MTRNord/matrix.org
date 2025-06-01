@@ -42,7 +42,7 @@ That said, the discussion highlighted some areas for improvement.
 Specifically:
 
 1. When doing work on making Matrix [GDPR
-   compliant](https://matrix.org/blog/2018/05/08/gdpr-compliance-in-matrix)
+   compliant](/blog/2018/05/08/gdpr-compliance-in-matrix)
    back in May 2018, we set up a single [privacy
    policy](https://github.com/vector-im/policies/blob/master/docs/matrix-org/privacy_notice.md)
    for the services we run, and got users to agree to it by locking them out of

@@ -41,7 +41,7 @@ Synapse now has an Admin APIs to:
 
 - [Delete media uploaded by a user](https://matrix-org.github.io/synapse/v1.41/admin_api/user_admin_api.html#delete-media-uploaded-by-a-user) from your homeserver's local media storage.
 - [Edit the external ids](https://matrix-org.github.io/synapse/v1.41/admin_api/user_admin_api.html#create-or-modify-account) associated with a user by Single Sign-On / OpenID Connect providers.
-- [Check if a username is available](https://matrix-org.github.io/synapse/v1.41/admin_api/user_admin_api.html#check-username-availability), which behaves similarly to the [related client-server API](https://matrix.org/docs/spec/client_server/r0.6.0#get-matrix-client-r0-register-available) in the Matrix Spec, but the Admin API version works even when registration is disabled on a homeserver.
+- [Check if a username is available](https://matrix-org.github.io/synapse/v1.41/admin_api/user_admin_api.html#check-username-availability), which behaves similarly to the [related client-server API](/docs/spec/client_server/r0.6.0#get-matrix-client-r0-register-available) in the Matrix Spec, but the Admin API version works even when registration is disabled on a homeserver.
 
 ## Everything Else
 
@@ -50,7 +50,7 @@ In addition to the usual boosts to performance and reliability like [#10119](htt
 - The `/createRoom` endpoint can now be [handled by workers](https://github.com/matrix-org/synapse/pull/10564).
 - Synapse can now route outbound federation requests, remote media downloads, and public key fetches through a [forward proxy](https://matrix-org.github.io/synapse/v1.41/setup/forward_proxy.html).
 - Custom template configuration has now been centralized into a single `custom_templates_directory` [configuration setting](https://matrix-org.github.io/synapse/v1.41/templates.html).
-- Matrix clients which allow users to [set a `status_msg` with their presence](https://matrix.org/docs/spec/client_server/latest#id64) will find that Synapse no longer arbitrarily unsets the message when a user goes offline. Instead, each user's `status_msg` will persist until it is deliberately cleared by their client.
+- Matrix clients which allow users to [set a `status_msg` with their presence](/docs/spec/client_server/latest#id64) will find that Synapse no longer arbitrarily unsets the message when a user goes offline. Instead, each user's `status_msg` will persist until it is deliberately cleared by their client.
 - The extension module API now exposes a function, `get_userinfo_by_id`, which accepts an MXID and returns a `UserInfo` object. This should simplify writing extension modules like spam checkers.
 
 These are just the highlights; please see the [Upgrade Notes](https://matrix-org.github.io/synapse/v1.41/upgrade.html#upgrading-to-v1410) and [Release Notes](https://github.com/matrix-org/synapse/blob/v1.41.0/CHANGES.md) for a complete list of changes in this release.

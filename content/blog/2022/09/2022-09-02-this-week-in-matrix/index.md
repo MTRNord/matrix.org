@@ -194,7 +194,7 @@ Secure and independent communication, connected via Matrix. Come talk with us in
 > 
 > Last weekend we received a report from Val Lorentz (thank you!) that it was possible to create a situation where Element wouldn’t show all of the user’s rooms or Spaces, causing minor (temporary) corruption and Denial of Service (DoS). We’ve fixed this case in v1.11.4 and encourage everyone to update as soon as possible.
 > 
-> While the vulnerabilities themselves are not disclosed yet, there is more information on the [element.io blog](https://element.io/blog/element-web-desktop-1-11-4-a-security-update-deferred-dms-and-more/) and the [matrix.org blog](https://matrix.org/blog/2022/08/31/security-releases-matrix-js-sdk-19-4-0-and-matrix-react-sdk-3-53-0).
+> While the vulnerabilities themselves are not disclosed yet, there is more information on the [element.io blog](https://element.io/blog/element-web-desktop-1-11-4-a-security-update-deferred-dms-and-more/) and the [matrix.org blog](/blog/2022/08/31/security-releases-matrix-js-sdk-19-4-0-and-matrix-react-sdk-3-53-0).
 > 
 > Please note that this also affects consumers of the matrix-react-sdk and matrix-js-sdk: updating to v3.53.0 and v19.4.0 respectively should resolve the issue.
 > 
@@ -246,7 +246,7 @@ Cinny is a Matrix client focused on simplicity, elegance and security
 > 
 > If you are using [our hosted version](https://app.cinny.in) then it is already up-to-date and all you need is a refresh and clear cache (if you were hit by the vulnerability).
 > 
-> You can read more about the vulnerability at [Security releases: matrix-js-sdk 19.4.0](https://matrix.org/blog/2022/08/31/security-releases-matrix-js-sdk-19-4-0-and-matrix-react-sdk-3-53-0).
+> You can read more about the vulnerability at [Security releases: matrix-js-sdk 19.4.0](/blog/2022/08/31/security-releases-matrix-js-sdk-19-4-0-and-matrix-react-sdk-3-53-0).
 > 
 > Find more about Cinny at https://cinny.in/
 > Join our space at: https://matrix.to/#/#cinny-space:matrix.org
@@ -369,7 +369,7 @@ Synapse Maintenance Container – Docker container with tools for synapse & post
 > 
 > Camp ended Sunday, August 28th, 2022 (Navarro, CA, USA) (Internet Archive / Gatherings For Good / Custom Camps / Camp Navarro).
 > 
-> Previous update: <https://matrix.org/blog/2022/08/19/this-week-in-matrix-2022-08-19#one-week-until-dweb-camp> ([!QQpfJfZvqxbCfeDgCj:matrix.org/$891I4nVQp4ZBGG79-vsO6w8rEGJ_Vfar69QsICy8R98](https://matrix.to/#/!QQpfJfZvqxbCfeDgCj:matrix.org/$891I4nVQp4ZBGG79-vsO6w8rEGJ_Vfar69QsICy8R98?via=matrix.org&via=element.io&via=kde.org))
+> Previous update: </blog/2022/08/19/this-week-in-matrix-2022-08-19#one-week-until-dweb-camp> ([!QQpfJfZvqxbCfeDgCj:matrix.org/$891I4nVQp4ZBGG79-vsO6w8rEGJ_Vfar69QsICy8R98](https://matrix.to/#/!QQpfJfZvqxbCfeDgCj:matrix.org/$891I4nVQp4ZBGG79-vsO6w8rEGJ_Vfar69QsICy8R98?via=matrix.org&via=element.io&via=kde.org))
 > 
 > ### Summit Bridge Call
 > 

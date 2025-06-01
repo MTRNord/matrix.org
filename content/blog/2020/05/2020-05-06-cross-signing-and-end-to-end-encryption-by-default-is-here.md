@@ -15,7 +15,7 @@ Hi all,
 As of today, Matrix is end-to-end encrypted **by default** for private conversations.
 
 Three years have passed since we [first announced End-to-end Encryption in
-Matrix](https://matrix.org/blog/2016/11/21/matrixs-olm-end-to-end-encryption-security-assessment-released-and-implemented-cross-platform-on-riot-at-last)
+Matrix](/blog/2016/11/21/matrixs-olm-end-to-end-encryption-security-assessment-released-and-implemented-cross-platform-on-riot-at-last)
 and started to beta test it in Riot - and after an enormous amount of
 polishing and refinement on its user experience, we are finally declaring it
 out of beta and enabling it by default for all new private conversations in

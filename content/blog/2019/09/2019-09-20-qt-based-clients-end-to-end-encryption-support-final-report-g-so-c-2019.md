@@ -12,7 +12,7 @@ category = ["GSOC"]
 
 **libQMatrixClient was [renamed](https://github.com/quotient-im/libQuotient/issues/325) to libQuotient*
 
-The project aimed at adding end-to-end encryption to [libQuotient](https://github.com/quotient-im/libQuotient) for future support in Qt/libQuotient-based clients like [Quaternion](https://matrix.org/docs/projects/client/quaternion) and [Spectal](https://matrix.org/docs/projects/client/spectral), or even [Telepathy IM](https://github.com/TelepathyIM/telepathy-tank).
+The project aimed at adding end-to-end encryption to [libQuotient](https://github.com/quotient-im/libQuotient) for future support in Qt/libQuotient-based clients like [Quaternion](/docs/projects/client/quaternion) and [Spectal](/docs/projects/client/spectral), or even [Telepathy IM](https://github.com/TelepathyIM/telepathy-tank).
 
 ## The work done
 
@@ -37,7 +37,7 @@ So, the basic structure of the project changed a bit, libQtOlm was added as a de
                                                               +------------+
 ```
 
-During the coding period, I've resorted to [the specification](https://matrix.org/docs/spec/client_server/latest), [the guide](https://matrix.org/docs/guides/end-to-end-encryption-implementation-guide) and the [last year GSoC python implementation](https://github.com/Zil0/matrix-python-sdk/wiki) actively. And added [minor fix for the documentation](https://github.com/matrix-org/matrix-doc/pull/2157) about names constants at the documentation examples.
+During the coding period, I've resorted to [the specification](/docs/spec/client_server/latest), [the guide](/docs/guides/end-to-end-encryption-implementation-guide) and the [last year GSoC python implementation](https://github.com/Zil0/matrix-python-sdk/wiki) actively. And added [minor fix for the documentation](https://github.com/matrix-org/matrix-doc/pull/2157) about names constants at the documentation examples.
 
 ## Demonstration
 

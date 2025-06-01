@@ -25,7 +25,7 @@ This context doesn’t make the changes easier, but it does illuminate how we go
 
 ## What's next?
 
-That was our first question too! This is a transition we want to navigate with care — how we proceed hinges on both what the Foundation can do and what it should do, grounded in [our mission](https://matrix.org/about/#mission).
+That was our first question too! This is a transition we want to navigate with care — how we proceed hinges on both what the Foundation can do and what it should do, grounded in [our mission](/about/#mission).
 
 As it stands, the Foundation does not plan to begin funding active development of the current Synapse and Dendrite projects. Even if it made sense for us to do so, we don't have the resources.
 
@@ -33,7 +33,7 @@ With that said, the Foundation has a role in funding research and development of
 
 We expect these forks of Synapse and Dendrite will be widely adopted, and we wish them well!
 
-Beyond that, we don’t have all the answers yet. This is new territory we will need to navigate as a community. Matrix is bigger than any one or two open source projects – it’s an [open protocol](https://spec.matrix.org/latest/) and [a whole ecosystem](https://matrix.org/ecosystem/servers/).
+Beyond that, we don’t have all the answers yet. This is new territory we will need to navigate as a community. Matrix is bigger than any one or two open source projects – it’s an [open protocol](https://spec.matrix.org/latest/) and [a whole ecosystem](/ecosystem/servers/).
 
 ## What does this mean for you?
 

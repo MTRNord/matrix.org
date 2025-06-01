@@ -17,7 +17,7 @@ let's have a look at what's inside.
 ## Dependency changes
 
 As announced in the [Synapse 1.67 release
-announcement](https://matrix.org/blog/2022/09/14/synapse-1-67-released), Synapse
+announcement](/blog/2022/09/14/synapse-1-67-released), Synapse
 1.68 raises the minimum supported version of SQLite to version v3.27.0. This
 means that, if your installation of Synapse is using SQLite to manage its
 database, and the SQLite version used is lower than 3.27, you will need to

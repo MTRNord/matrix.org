@@ -10,7 +10,7 @@ category = ["Releases", "Spec"]
 
 Hey all,
 
-Welcome to the second installment of our quarterly spec releases. If it feels like it hasn’t been long since our last release, you’re not alone! Our [last release](https://matrix.org/blog/2021/11/09/matrix-v-1-1-release) was just 3 months ago, introducing the new platform and world we build within.
+Welcome to the second installment of our quarterly spec releases. If it feels like it hasn’t been long since our last release, you’re not alone! Our [last release](/blog/2021/11/09/matrix-v-1-1-release) was just 3 months ago, introducing the new platform and world we build within.
 
 This improvement in speed might seem _too_ fast, but fret not: implementations are not expected to update as soon as the new spec is published. Rather, it is more realistic to expect that the ecosystem gradually update over the course of the following few months/year. Particularly after the massive release that was v1.1.
 
@@ -18,7 +18,7 @@ So, what’s new in v1.2? With 18 MSCs merged there’s a lot to cover - we’ve
 
 ## Rearchitecting with Spaces
 
-Spaces launched into beta [last May](https://matrix.org/blog/2021/05/17/the-matrix-space-beta), redefining how we can use rooms on Matrix to represent different data structures. Described mostly as [MSC1772](https://github.com/matrix-org/matrix-doc/pull/1772), Spaces are simply rooms with a specific [type in their m.room.create event](https://spec.matrix.org/v1.2/client-server-api/#rooms-1). With state events being used to define which other rooms (meaning Spaces too) are part of that Space, the possibilities for tree-like structured data become endless.
+Spaces launched into beta [last May](/blog/2021/05/17/the-matrix-space-beta), redefining how we can use rooms on Matrix to represent different data structures. Described mostly as [MSC1772](https://github.com/matrix-org/matrix-doc/pull/1772), Spaces are simply rooms with a specific [type in their m.room.create event](https://spec.matrix.org/v1.2/client-server-api/#rooms-1). With state events being used to define which other rooms (meaning Spaces too) are part of that Space, the possibilities for tree-like structured data become endless.
 
 There’s still quite a lot of work to do in the Spaces space (hah), though we’re excited to see it all land. For instance, [MSC3216](https://github.com/matrix-org/matrix-doc/pull/3216) and [MSC2962](https://github.com/matrix-org/matrix-doc/pull/2962) target power level syncing, [MSC3219](https://github.com/matrix-org/matrix-doc/pull/3219) aims for flair, and [MSC3089](https://github.com/matrix-org/matrix-doc/pull/3089) looks at file structures using Spaces. We might even be able to replace the public room directory with a server-wide space, making writing clients a little bit easier.
 

@@ -20,7 +20,7 @@ server (using the `account_threepid_delegates.email` configuration setting).
 This feature relied on old APIs from the Matrix specification that have since
 been [removed](https://spec.matrix.org/v1.3/changelog/#identity-service-api-1-1) from it.
 
-[Synapse 1.64](https://matrix.org/blog/2022/08/03/synapse-1-64-released) announced the
+[Synapse 1.64](/blog/2022/08/03/synapse-1-64-released) announced the
 deprecation of this feature, and the addition of a warning at startup when
 the configuration setting is in use.
 

@@ -17,7 +17,7 @@ of the oven, let's have a look at what's inside.
 ## Removal of TCP replication
 
 As announced in the [Synapse 1.66 release
-announcement](https://matrix.org/blog/2022/09/02/synapse-1-66-released), Synapse 1.67 removes support for the legacy TCP replication protocol.
+announcement](/blog/2022/09/02/synapse-1-66-released), Synapse 1.67 removes support for the legacy TCP replication protocol.
 
 As a reminder, Synapse can be configured to use workers to spread its load over
 multiple processes, or even multiple machines. These workers communicate between

@@ -36,6 +36,6 @@ The bug was introduced as a result of two factors:
 - The event filtering code assumes that the user is currently in the room - this was not intuitive, and was not called out in the documentation
 - When we fetched the events from the database, we tried to limit to events sent before the user left the room. On reflection, we used the wrong ordering mechanism (stream ordering instead of topological ordering), resulting in the inclusion of events that were fetched from a remote server after the data subject had left
 
-We are working to fix the bug, and we'll update here when it is resolved. As a reminder, please do report security bugs responsibly as per the [Security Disclosure Policy](https://matrix.org/security-disclosure-policy/) so we can validate the issue and mitigate abuse.
+We are working to fix the bug, and we'll update here when it is resolved. As a reminder, please do report security bugs responsibly as per the [Security Disclosure Policy](/security-disclosure-policy/) so we can validate the issue and mitigate abuse.
 
 As is standard practice for any data breach, we have notified the ICO.

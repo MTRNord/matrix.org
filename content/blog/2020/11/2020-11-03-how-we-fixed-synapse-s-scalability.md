@@ -32,7 +32,7 @@ scalability improvements for the last 2 weeks! Huge kudos goes to Erik and the
 wider Synapse team for pulling this off.
 
 Some readers might wonder how this ties in with [Dendrite entering
-beta](https://matrix.org/blog/2020/10/08/dendrite-is-entering-beta), given one
+beta](/blog/2020/10/08/dendrite-is-entering-beta), given one
 of Dendrite’s design goals is full horizontal scalability.  The answer is that
 we’re very much using Dendrite for experimentation and next-gen stuff at the
 moment (currently focused more on scaling downwards for P2P rather than

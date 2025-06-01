@@ -58,7 +58,7 @@ Synapse 1.65 stabilises the implementation of
 allows filtering public room searches on room types. This means it is now
 possible to search specifically for public spaces. For more information on this
 feature, see [the Synapse 1.63
-announcement](https://matrix.org/blog/2022/07/20/synapse-1-63-released).
+announcement](/blog/2022/07/20/synapse-1-63-released).
 
 Additionally, Synapse 1.65 implements the new experimental error codes
 documented by

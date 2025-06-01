@@ -35,7 +35,7 @@ for more information.
 ## So long groups, and thanks for all the fish
 
 Long-time users of Matrix might remember when, [way back in
-2017](https://matrix.org/blog/2017/10/24/synapse-0-24-is-here), we introduced
+2017](/blog/2017/10/24/synapse-0-24-is-here), we introduced
 groups (also known as communities in some clients). Groups would let users
 define a curated set of users and rooms to represent a given community that
 others could refer to. We even used to have `+matrix:matrix.org` which was
@@ -46,7 +46,7 @@ of Matrix), that's no coincidence. Some time ago, we had already identified a
 good amount of shortcomings with groups, and decided to redesign the feature
 entirely and release it under the name "spaces". If you're curious about this,
 then you may wish to read the [spaces announcement
-blogpost](https://matrix.org/blog/2021/05/17/the-matrix-space-beta) we released
+blogpost](/blog/2021/05/17/the-matrix-space-beta) we released
 at the time.
 
 Now that spaces have been out of beta for some time, and have shown to be a very

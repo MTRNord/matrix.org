@@ -11,7 +11,7 @@ category = ["Releases", "Spec"]
 
 Hey all,
 
-It’s another quarter and therefore [another spec release](https://spec.matrix.org/v1.3/)! Matrix 1.2 was [released](https://matrix.org/blog/2022/02/02/matrix-v-1-2-release) back in February, and while a bit late in the quarter this time around we’ve still got some exciting additions coming to you in this release.
+It’s another quarter and therefore [another spec release](https://spec.matrix.org/v1.3/)! Matrix 1.2 was [released](/blog/2022/02/02/matrix-v-1-2-release) back in February, and while a bit late in the quarter this time around we’ve still got some exciting additions coming to you in this release.
 
 Like last time, the speed of these releases might feel a bit quick for developers: fret not if you’re still working on v1.1 or v1.2 implementations. We’re not expecting that implementations update as soon as a new spec release is published, but rather that the ecosystem gradually update over the course of the next few months. Implementations should be aiming for as close to realtime as they can get though, particularly considering v1.4 is expected to have some large features (more on that later on).
 
@@ -27,7 +27,7 @@ To further prepare for threads, we’ve also removed some restrictions of rich r
 
 ## Join if you can, or just knock
 
-When we launched restricted rooms in Matrix 1.2 we [noted](https://matrix.org/blog/2022/02/02/matrix-v-1-2-release#public-but-not-too-public-join-rules) that we forgot to handle a case where someone might want to support _both_ knocking and restricted rooms at the same time. We’ve fixed that with a stop-gap join rule from [MSC3787](https://github.com/matrix-org/matrix-spec-proposals/pull/3787) in [room version 10](https://spec.matrix.org/v1.3/rooms/v10/).
+When we launched restricted rooms in Matrix 1.2 we [noted](/blog/2022/02/02/matrix-v-1-2-release#public-but-not-too-public-join-rules) that we forgot to handle a case where someone might want to support _both_ knocking and restricted rooms at the same time. We’ve fixed that with a stop-gap join rule from [MSC3787](https://github.com/matrix-org/matrix-spec-proposals/pull/3787) in [room version 10](https://spec.matrix.org/v1.3/rooms/v10/).
 
 The new `knock_restricted` join rule allows the room to keep its desire to be restricted whilst also allowing members who do not meet the criteria to knock on the room instead. We’ll likely expand on this sort of mixing of join rules in proposals like [MSC3386](https://github.com/matrix-org/matrix-spec-proposals/pull/3386) down the line, however for now this should cover the gap in support. Next up: figuring out how to make encrypted room history available to these new joiners in a safe way.
 
@@ -39,7 +39,7 @@ Threads are one of the more complicated features we’ve tried to land in recent
 
 Alongside threads, we also anticipate that [MSC2676](https://github.com/matrix-org/matrix-spec-proposals/pull/2676)-style message editing will be landing in v1.4, finally specifying how to update an event’s contents without having to redact & re-send. Although message editing has been supported for a long time in some clients, we're excited that it will finally become part of the official specification, meaning it can be implemented more widely. Messaging clients are encouraged to give the proposal an early read and possibly even attempt implementation if not already done to help us ensure the system is in a reasonable state for inclusion in the spec, though we do note that feature requests for edits will likely be deferred to a future MSC.
 
-Keep an eye on [This Week In Matrix](https://matrix.org/blog/category/this-week-in-matrix) for updates on what v1.4 is expected to include, and how things are progressing.
+Keep an eye on [This Week In Matrix](/blog/category/this-week-in-matrix) for updates on what v1.4 is expected to include, and how things are progressing.
 
 ## The full changelog
 

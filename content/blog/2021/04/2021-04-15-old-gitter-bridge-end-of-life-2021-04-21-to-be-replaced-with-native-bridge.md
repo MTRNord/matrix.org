@@ -9,7 +9,7 @@ category = ["Bridges"]
 
 Next week on Wednesday (2021-04-21), the old Gitter bridge (identified as `@gitterbot:matrix.org`) will be shut down and any plumbed rooms (bridged connections) remaining will no longer bridge. To replace this, we've already migrated all of the portal rooms and many of the plumbed rooms in preparation so most users will not need to take any further actions. The remaining rooms with the old Gitter bridge are unfortunately not possible to migrate and for those communities a clean break will be needed. The new native Gitter bridge is here to replace this!
 
-[Gitter is bridged natively to Matrix](https://matrix.org/blog/2020/12/07/gitter-now-speaks-matrix) on the `gitter.im` homeserver and all of the public rooms are available there. The new native Gitter bridge has many advantages over the old bridge and is being actively developed to ensure parity and delivers:
+[Gitter is bridged natively to Matrix](/blog/2020/12/07/gitter-now-speaks-matrix) on the `gitter.im` homeserver and all of the public rooms are available there. The new native Gitter bridge has many advantages over the old bridge and is being actively developed to ensure parity and delivers:
 
  - Ability to join public Gitter rooms from Matrix via `#<community>_<room>:gitter.im`
  - Native feeling virtual users on both sides of the bridge so messages appear from the author itself

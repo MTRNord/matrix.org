@@ -37,7 +37,7 @@ incorrect upgrade.
 This release of Synapse also continues work on bringing end-to-end capabilities
 to application services, which I was already telling you about in the [Synapse
 1.50 release blog
-post](https://matrix.org/blog/2022/01/18/synapse-1-50-released). More
+post](/blog/2022/01/18/synapse-1-50-released). More
 specifically, Synapse now supports sending device list updates to applications
 services, as part of implementing
 [MSC3202](https://github.com/matrix-org/matrix-spec-proposals/pull/3202). This
@@ -72,7 +72,7 @@ method](https://github.com/matrix-org/synapse/blob/e31d06f6f0923d001736f5e6e0861
 to allow modules to promote an existing user to server administrator (or demote
 a server administrator to a normal user). This follows up on an improvement
 introduced in [Synapse
-1.56](https://matrix.org/blog/2022/04/05/synapse-1-56-released) allowing modules
+1.56](/blog/2022/04/05/synapse-1-56-released) allowing modules
 to promote users to server administrators when registering them.
 
 ## Everything else

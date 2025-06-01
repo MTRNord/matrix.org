@@ -11,7 +11,7 @@ category = ["Releases", "Spec"]
 
 Hey all,
 
-It's been [a little while](https://matrix.org/blog/2019/11/08/client-server-r-0-6-0-and-identity-service-r-0-3-0-releases) since we've done a spec release, so here we are with [Room Version 6](https://matrix.org/docs/spec/rooms/v6), [Client-Server r0.6.1](https://matrix.org/docs/spec/client_server/r0.6.1), and [Federation r0.1.4](https://matrix.org/docs/spec/server_server/r0.1.4).
+It's been [a little while](/blog/2019/11/08/client-server-r-0-6-0-and-identity-service-r-0-3-0-releases) since we've done a spec release, so here we are with [Room Version 6](/docs/spec/rooms/v6), [Client-Server r0.6.1](/docs/spec/client_server/r0.6.1), and [Federation r0.1.4](/docs/spec/server_server/r0.1.4).
 
 Room Version 6 (and the associated Federation r0.1.4 release) is largely something for implementations to worry about. It contains new event authorisation rules, changes to the redaction algorithm, and stricter compliance for JSON.
 

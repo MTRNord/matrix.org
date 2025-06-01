@@ -10,7 +10,7 @@ category = ["Bridges"]
 
 Libera Chat recently [announced their decision to opt-out of portalled rooms](https://libera.chat/news/matrix-deportalling)
 from the Libera.Chat bridge instance hosted by the Matrix.org Foundation
-([a decision we regret but respect](https://matrix.org/blog/2023/07/deportalling-libera-chat/)).
+([a decision we regret but respect](/blog/2023/07/deportalling-libera-chat/)).
 **This means that for the bridge to keep working, all of your portalled rooms
 need to be turned into plumbed rooms before July 31st**. All of this might be a
 bit obscure, so let’s walk together through these concepts and give you the

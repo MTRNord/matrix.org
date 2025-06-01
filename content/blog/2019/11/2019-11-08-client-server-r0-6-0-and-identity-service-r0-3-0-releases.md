@@ -9,9 +9,9 @@ category = ["Releases", "Spec"]
 
 Hey all,
 
-For the last several months the team has been working on [tightening up privacy in Matrix](https://matrix.org/blog/2019/06/30/tightening-up-privacy-in-matrix), and with the [1.4 release of Synapse and Riot](https://matrix.org/blog/2019/09/27/privacy-improvements-in-synapse-1-4-and-riot-1-4) quite a lot has been done in the area. One of the remaining pieces was to release all the specification changes to help other client/server implementations achieve the same goals, and now we've done that.
+For the last several months the team has been working on [tightening up privacy in Matrix](/blog/2019/06/30/tightening-up-privacy-in-matrix), and with the [1.4 release of Synapse and Riot](/blog/2019/09/27/privacy-improvements-in-synapse-1-4-and-riot-1-4) quite a lot has been done in the area. One of the remaining pieces was to release all the specification changes to help other client/server implementations achieve the same goals, and now we've done that.
 
-The [Client-Server r0.6.0](https://matrix.org/docs/spec/client_server/r0.6.0) and [Identity Service r0.3.0](https://matrix.org/docs/spec/identity_service/r0.3.0) spec releases both cover the privacy improvements added through a number of MSCs in the last few months. Of particular note is that identity servers are now expected to support terms of service endpoints, which requires authentication that clients might need to worry about - check the spec changelogs for details.
+The [Client-Server r0.6.0](/docs/spec/client_server/r0.6.0) and [Identity Service r0.3.0](/docs/spec/identity_service/r0.3.0) spec releases both cover the privacy improvements added through a number of MSCs in the last few months. Of particular note is that identity servers are now expected to support terms of service endpoints, which requires authentication that clients might need to worry about - check the spec changelogs for details.
 
 The full changelog for the Client-Server r0.6.0 release is:
 

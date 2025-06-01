@@ -79,5 +79,5 @@ sustainability.
 
 Whether you’re an organisation from the public or the private sector, looking to
 cut costs down by building on a common, standard and reliable foundation, you
-can [support Matrix](https://matrix.org/support/) and
-[join the Foundation](https://matrix.org/membership/) today.
+can [support Matrix](/support/) and
+[join the Foundation](/membership/) today.

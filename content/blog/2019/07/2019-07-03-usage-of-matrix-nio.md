@@ -7,7 +7,7 @@ author = ["Ben Parsons"]
 category = ["Tutorials"]
 +++
 
-*Canonical version of this article at <https://matrix.org/docs/guides/usage-of-matrix-nio>*
+*Canonical version of this article at </docs/guides/usage-of-matrix-nio>*
 
 This article concerns [matrix-nio](https://github.com/poljar/matrix-nio), and [asyncio](https://docs.python.org/3/library/asyncio.html). We'll build a simple "echo bot", meaning a bot which replies to messages with the text it has just read. Note that this article does not cover E2EE with matrix-nio.
 
@@ -83,7 +83,7 @@ To get updates from a Matrix homeserver to the client, the client makes a reques
 sync_response = await async_client.sync(30000)
 ```
 
-30000 means we will wait up to 30 seconds before returning. `sync_response` will now contain a Python object containing a mapping of the (JSON) [response from the Matrix homeserver](https://matrix.org/docs/spec/client_server/latest#get-matrix-client-r0-sync). We'll inspect this response in the next section.
+30000 means we will wait up to 30 seconds before returning. `sync_response` will now contain a Python object containing a mapping of the (JSON) [response from the Matrix homeserver](/docs/spec/client_server/latest#get-matrix-client-r0-sync). We'll inspect this response in the next section.
 
 In fact, we expect there to be updates regularly, so let's create a very simple loop:
 
@@ -98,7 +98,7 @@ In this way, every time there is a response (i.e. new events) from the homeserve
 
 ## Explore the sync response object
 
-`sync_response` [can contain multitudes](https://matrix.org/docs/spec/client_server/latest#get-matrix-client-r0-sync), depending on the rooms this user is part of, or has been part of. `sync_response.rooms.join` contains updates for the rooms which the current user is "joined to" (meaning, is a member of.)
+`sync_response` [can contain multitudes](/docs/spec/client_server/latest#get-matrix-client-r0-sync), depending on the rooms this user is part of, or has been part of. `sync_response.rooms.join` contains updates for the rooms which the current user is "joined to" (meaning, is a member of.)
 
 Of these joined rooms, we are (perhaps!) most interested in the events on the timeline. These are stored in `timeline.events`, see below:
 

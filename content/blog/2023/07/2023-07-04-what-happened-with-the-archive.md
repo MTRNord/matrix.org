@@ -58,7 +58,7 @@ openness (least open first):
 - `world_readable`: _everyone can see the room history_ without even joining the
   room.
 
-Element is [far from being the only Matrix client](https://matrix.org/ecosystem/clients/)
+Element is [far from being the only Matrix client](/ecosystem/clients/)
 out there but is commonly used in the Matrix community. The visibility settings
 described above are translated as follows in Element, by decreasing order of
 openness:

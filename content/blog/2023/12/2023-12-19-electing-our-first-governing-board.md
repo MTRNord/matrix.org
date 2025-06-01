@@ -12,7 +12,7 @@ category = ["Foundation"]
 
 As 2023 winds down and I find myself in the thick of planning for 2024, I’d like to start preparing all of us in the Matrix ecosystem for what is to come.
 
-Next year will mark a number of important milestones in the history and evolution of Matrix: the protocol will mark its [10th birthday](https://matrix.org/blog/2014/09/03/hello-world/), we’ll see [key initiatives](https://matrix.org/blog/2023/09/matrix-2-0/) in the spec cross the finish line, and we’ll seat the first ever community-elected Governing Board.
+Next year will mark a number of important milestones in the history and evolution of Matrix: the protocol will mark its [10th birthday](/blog/2014/09/03/hello-world/), we’ll see [key initiatives](/blog/2023/09/matrix-2-0/) in the spec cross the finish line, and we’ll seat the first ever community-elected Governing Board.
 
 The election of our first Governing Board is what I’d like to focus on today, because it is a huge milestone on the path to an independent, self-sustaining, and self-governing ecosystem. When we celebrate Matrix’s 20th birthday, we’ll look back and our history will be divided much the same way it is in other ecosystems: before and after incorporating a foundation, and before and after introducing community governance.
 

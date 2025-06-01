@@ -28,7 +28,7 @@ There's plenty of scope for refinement here, and we've identified a few places w
 
 * The Governing Board will publish criteria for inclusion in the Matrix.org room directory. They'll also tell you how you can suggest rooms and spaces for the directory.   
 * We're going to recommend safer defaults. Servers should not let users publish rooms unless there are appropriate filtering and moderation tools in place, and people to wield them. For instance, Element have made this change to Synapse in [PR18175](https://github.com/element-hq/synapse/pull/18175)  
-* We're exploring discovery as a topic, including removing the room directory API. One promising idea is to use Spaces: servers could publish a default space, with rooms curated by the server admin. Our recent post includes some other projects we have in this area: [https://matrix.org/blog/2025/02/building-a-safer-matrix/](https://matrix.org/blog/2025/02/building-a-safer-matrix/)
+* We're exploring discovery as a topic, including removing the room directory API. One promising idea is to use Spaces: servers could publish a default space, with rooms curated by the server admin. Our recent post includes some other projects we have in this area: [/blog/2025/02/building-a-safer-matrix/](https://matrix.org/blog/2025/02/building-a-safer-matrix/)
 
 ## FAQs
 
@@ -46,4 +46,4 @@ It didn't exist before May 2024, so the Office has never been in the directory. 
 At the moment, you can't. The Governing Board will publish the criteria and the flow for getting on the list.
 
 **What do I do if I find a harmful room in the current directory?**  
-You shouldn't, but if a room does have harmful content, check out [How you can help](https://matrix.org/blog/2025/02/building-a-safer-matrix/#how-you-can-help)
+You shouldn't, but if a room does have harmful content, check out [How you can help](/blog/2025/02/building-a-safer-matrix/#how-you-can-help)

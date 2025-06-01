@@ -32,7 +32,7 @@ relatively extensive attack surface. We have therefore classified this as High
 severity and strongly recommend upgrading as a precautionary measure.
 
 We found these issues during a codebase audit that we had [previously
-announced](https://matrix.org/blog/2022/08/31/security-releases-matrix-js-sdk-19-4-0-and-matrix-react-sdk-3-53-0)
+announced](/blog/2022/08/31/security-releases-matrix-js-sdk-19-4-0-and-matrix-react-sdk-3-53-0)
 in an earlier security release of matrix-js-sdk and matrix-react-sdk. The
 earlier release had already addressed a set of similar vulnerabilities that
 were assigned

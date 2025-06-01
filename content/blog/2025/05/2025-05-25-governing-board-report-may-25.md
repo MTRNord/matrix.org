@@ -11,9 +11,9 @@ category = ["Governing Board"]
 Hi all!
 
 Another six months has passed since [our last
-report](https://matrix.org/blog/2024/12/governing-board-first-report/), and
+report](/blog/2024/12/governing-board-first-report/), and
 elections are [just around the
-corner](https://matrix.org/foundation/governing-board-elections/2025). So that
+corner](/foundation/governing-board-elections/2025). So that
 means it’s time for another Board report. We’ll be asking you to select some
 new board members, and it’s only right that you get some insight into the work
 that’s been going on with the ones we have!
@@ -69,9 +69,9 @@ governance of the board, but will have advice/input for wider scope matters
       sensitive topic. Rest assured this group has been very busy)
   * Community
     * Charter agreed & adopted
-    * [Website Working Group](https://matrix.org/foundation/working-groups/)
+    * [Website Working Group](/foundation/working-groups/)
       created for managing [matrix.org](http://matrix.org) and related sites
-    * [Events Working Group](https://matrix.org/foundation/working-groups/) for
+    * [Events Working Group](/foundation/working-groups/) for
       ... events!
     * First proposals for the Foundation are coming up from the Website group
     * Tighter integration with Finance needed for Events to work well
@@ -87,7 +87,7 @@ governance of the board, but will have advice/input for wider scope matters
     be living documents that we will update as required, especially as we try
     these processes and expectations out for real
   * These are canonically maintained and published through the [Matrix Governing Board
-    site](https://matrix.org/foundation/governing-board/#bylaws-processes-and-norms)
+    site](/foundation/governing-board/#bylaws-processes-and-norms)
   * Some areas already identified for work (probably by the Governance
     Committee) in terms of Working Group operation and clarity on some terms
 * Goals for 6-12 months
@@ -112,16 +112,16 @@ force for good in the Matrix ecosystem.
 
 Well, I’m glad you asked. Right now, we need to publish the committee reports
 that went into the meeting - given we have a shiny new [board section of the
-Matrix website](https://matrix.org/foundation/governing-board/) I think a
+Matrix website](/foundation/governing-board/) I think a
 reports section there probably makes sense. In fact, I want to broaden that
 out, so you can see the committees & [working
-groups](https://matrix.org/foundation/working-groups/), their charters, and how
+groups](/foundation/working-groups/), their charters, and how
 to get in touch with them if you want to help.
 
 Then we have the elections! At the time of writing, nominations are still open,
 but only for another day!  If you want to come work on this stuff with us,
 please go [read the election
-page](https://matrix.org/foundation/governing-board-elections/2025/) right now!
+page](/foundation/governing-board-elections/2025/) right now!
 Even if you don't, we still need you to go vote for your candidates! Open
 governance comes from the constituents, so please do use your vote. 
 

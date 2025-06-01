@@ -8,7 +8,7 @@ author = ["Richard van der Hoff"]
 category = ["General"]
 +++
 
-As of [Synapse 1.69](https://matrix.org/blog/2022/10/17/synapse-1-69-released), we consider "faster remote room joins" to be ready for testing by server admins.
+As of [Synapse 1.69](/blog/2022/10/17/synapse-1-69-released), we consider "faster remote room joins" to be ready for testing by server admins.
 
 There are a number of caveats, which I'll come to, but first: this is an important step in a project which we've been working on for 9 months. Most people who use Matrix will be familiar with the pain of joining a large room over federation: typically you are just faced with a spinner, which is eventually replaced by a cryptic error. If you're lucky, the room eventually pops up in your room list of its own accord. The whole experience is [one of the longest-standing open issues in Synapse](https://github.com/matrix-org/synapse/issues/1211).
 

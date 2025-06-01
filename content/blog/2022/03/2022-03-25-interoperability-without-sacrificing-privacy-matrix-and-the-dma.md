@@ -81,7 +81,7 @@ There are solutions to this, however:
   like Matrix to preserve end-to-end encryption throughout.  This is
   obviously significant work on the gatekeeper’s side, but we shouldn’t rule
   it out.  For instance, making the transition for a non-encrypted service is
-  impressively little work, as [we proved with Gitter](https://matrix.org/blog/2020/12/07/gitter-now-speaks-matrix#how-do-you-make-an-existing-chat-system-talk-matrix).
+  impressively little work, as [we proved with Gitter](/blog/2020/12/07/gitter-now-speaks-matrix#how-do-you-make-an-existing-chat-system-talk-matrix).
   (We’d ideally need to figure out decentralised/federated identity-lookup
   first though, to avoid switching from one centralised identity database
   to another).

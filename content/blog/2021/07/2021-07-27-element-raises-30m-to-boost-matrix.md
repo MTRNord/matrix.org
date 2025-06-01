@@ -28,13 +28,13 @@ but suffice it to say that this is enormous news for the Matrix ecosystem as a
 whole.  In addition to transforming the Element app, on the Matrix side this
 means that there is now concrete funding secured to:
 
- * finish building out [P2P Matrix](https://matrix.org/blog/2021/05/06/introducing-the-pinecone-overlay-network)
+ * finish building out [P2P Matrix](/blog/2021/05/06/introducing-the-pinecone-overlay-network)
    and get it live (including finishing Dendrite, given our P2P work builds on Dendrite!)
 
  * implement [native decentralised E2EE voip/video conferencing](https://twitter.com/matrixdotorg/status/1419820122143961093) for Matrix
 
  * fully build out our
-   [relative decentralised reputation system](https://matrix.org/blog/2020/10/19/combating-abuse-in-matrix-without-backdoors)
+   [relative decentralised reputation system](/blog/2020/10/19/combating-abuse-in-matrix-without-backdoors)
    in order to combat abuse in Matrix.
 
 Obviously this is in addition to all the normal business-as-usual work going
@@ -61,7 +61,7 @@ donations pay for all the matrix.org infrastructure while inspiring others to
 open their cheque books; the existing investors at Element (especially [Notion](https://notion.vc)
 and [Automattic](https://automattic.com), who have come in again on this round); all the large scale
 Matrix deployments out there which are effectively turning Matrix into an
-industry (hello [gematik!](https://matrix.org/blog/2021/07/21/germanys-national-healthcare-system-adopts-matrix)) -
+industry (hello [gematik!](/blog/2021/07/21/germanys-national-healthcare-system-adopts-matrix)) -
 and everyone who has ever run a Matrix server, contributed code, used the
 spec to make their own Matrix-powered creation, or simply chatted on Matrix.
 

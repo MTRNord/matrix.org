@@ -80,7 +80,7 @@ would need to agree to have their room be ‘plumbed’ into Matrix.
 As a separate point, we know there have been some concerns about the
 archive.matrix.org service. This is unfortunate, not least because we see some
 fundamental misunderstandings on what the service is doing and why.
-[Here is a more detailed post to explain](https://matrix.org/blog/2023/07/what-happened-with-the-archive/).
+[Here is a more detailed post to explain](/blog/2023/07/what-happened-with-the-archive/).
 
 
 ## So what does this mean?

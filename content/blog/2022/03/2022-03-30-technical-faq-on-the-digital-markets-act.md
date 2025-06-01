@@ -151,4 +151,4 @@ in order to realise the most exciting benefits of the DMA.
 
 ---
 
-For a much deeper dive into the above, please check out our post at "[How do you implement interoperability in a DMA world?](https://matrix.org/blog/2022/03/29/how-do-you-implement-interoperability-in-a-dma-world)"
+For a much deeper dive into the above, please check out our post at "[How do you implement interoperability in a DMA world?](/blog/2022/03/29/how-do-you-implement-interoperability-in-a-dma-world)"

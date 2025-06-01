@@ -32,7 +32,7 @@ The response to `/sync` now omits optional keys when they would otherwise be emp
 A few other items worth calling out:
 
 - This release includes an experimental implementation of [MSC2918: Refresh tokens](https://github.com/matrix-org/matrix-doc/pull/2918), which adds initial support for complementary access / refresh tokens in line with OAuth best practices ([#9450](https://github.com/matrix-org/synapse/pull/9450)).
-- Synapse now [ships a script](https://github.com/matrix-org/synapse/pull/10290) to review recently registered accounts, which can be useful in cleaning up servers in the wake of malicious, automated registrations like we witnessed during last month's [spam attack](https://matrix.org/blog/2021/06/30/security-update-synapse-1-37-1-released).
+- Synapse now [ships a script](https://github.com/matrix-org/synapse/pull/10290) to review recently registered accounts, which can be useful in cleaning up servers in the wake of malicious, automated registrations like we witnessed during last month's [spam attack](/blog/2021/06/30/security-update-synapse-1-37-1-released).
 - We've also fixed a few rough edges ([#10263](https://github.com/matrix-org/synapse/pull/10263), [#10303](https://github.com/matrix-org/synapse/pull/10303), [#10336](https://github.com/matrix-org/synapse/pull/10336)) in the spam mitigations from 1.37.1, and would encourage you to update.
 - The [Admin API for querying user information](https://matrix-org.github.io/synapse/v1.38/admin_api/user_admin_api.html) now includes information about a user's SSO identities in its response.
 

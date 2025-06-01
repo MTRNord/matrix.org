@@ -86,7 +86,7 @@ services.
 
 ### What problems need to be solved?
 
-We’ve [already written about this](https://matrix.org/blog/2022/03/25/interoperability-without-sacrificing-privacy-matrix-and-the-dma)
+We’ve [already written about this](/blog/2022/03/25/interoperability-without-sacrificing-privacy-matrix-and-the-dma)
 from a Matrix perspective, but to recap - the main challenge is the trade-off
 between interoperability and privacy for gatekeepers who provide end-to-end
 encryption, which at a rough estimate means: WhatsApp, iMessage, secret chats
@@ -282,7 +282,7 @@ from the closed service to an open system, looking something like this:
 ![](/blog/img/2022-03-29-alice-bob-clientside-apis.jpg)
 
 Finally, it's worth noting that when peer-to-peer decentralised protocols
-like [P2P Matrix](https://matrix.org/blog/2020/06/02/introducing-p-2-p-matrix/)
+like [P2P Matrix](/blog/2020/06/02/introducing-p-2-p-matrix/)
 enter production, clientside bridges could bridge directly into a local
 communication server running on the handset - thus avoiding metadata being
 exposed on Matrix or XMPP servers providing a common language between the

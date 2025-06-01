@@ -58,7 +58,7 @@ The support is experimental and needs to be enabled with a configuration flag si
 ### More faster remote room joins fixes and improvements
 
 In case you missed it we are working on dramatically improve performance of remote room joins, you can refer
-to [this blog post](https://matrix.org/blog/2022/10/18/testing-faster-remote-room-joins) for more details.
+to [this blog post](/blog/2022/10/18/testing-faster-remote-room-joins) for more details.
 
 The last two Synapse releases brings that a lot closer to a proper release; in
 particular they contain a lot of work to support faster joins in deployments

@@ -10,7 +10,7 @@ category = ["Releases", "Spec"]
 
 Hey all,
 
-[Matrix 1.7](https://spec.matrix.org/v1.7/) has just been released! The last spec release was [about 3 months ago](https://matrix.org/blog/2023/02/14/matrix-v-1-6-release), keeping us on track for regular quarterly releases. Unlike Matrix 1.6 though, today’s release is packed with plenty of features, some of which we’d like to call out here. Not all implementations will have support for these features yet though, and that’s okay (expected, even).
+[Matrix 1.7](https://spec.matrix.org/v1.7/) has just been released! The last spec release was [about 3 months ago](/blog/2023/02/14/matrix-v-1-6-release), keeping us on track for regular quarterly releases. Unlike Matrix 1.6 though, today’s release is packed with plenty of features, some of which we’d like to call out here. Not all implementations will have support for these features yet though, and that’s okay (expected, even).
 
 Adding support for a spec release can be a significant body of work. Instead of implementations having everything ready for spec release day, the idea is that they gain support over the next few months. If you’re able, please help those projects get v1.7’s features.
 

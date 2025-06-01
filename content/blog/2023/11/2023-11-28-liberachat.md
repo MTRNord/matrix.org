@@ -13,7 +13,7 @@ Today we are sorry to announce that we are not able to bring the Libera Chat bri
 
 If you are one of those who have relied on the bridge in the past, you may be asking: what now? You do have options.
 
-People who need a bridge for their community can [run their own](https://matrix.org/ecosystem/bridges/irc/): the matrix-appservice-irc software is still maintained. Only its Libera Chat instance, which was configured to persist connections across restarts, is being shut down. Please be mindful of the network, and read [Libera Chat’s recommendations](https://libera.chat/guides/faq#are-bridges-allowed) and [their Matrix FAQ](https://libera.chat/guides/matrix) when doing so.
+People who need a bridge for their community can [run their own](/ecosystem/bridges/irc/): the matrix-appservice-irc software is still maintained. Only its Libera Chat instance, which was configured to persist connections across restarts, is being shut down. Please be mindful of the network, and read [Libera Chat’s recommendations](https://libera.chat/guides/faq#are-bridges-allowed) and [their Matrix FAQ](https://libera.chat/guides/matrix) when doing so.
 
 
 <!-- more -->

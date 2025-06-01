@@ -11,7 +11,7 @@ category = ["Releases", "Spec"]
 
 Hey all,
 
-Once again it's been [a little while](https://matrix.org/blog/2020/05/27/room-version-6-client-server-r-0-6-1-and-federation-r-0-1-4-spec-releases) since we've done a spec release (sorry; we're aiming for quarterly releases from here on out), but this time we have some pretty big news: we've got an [all-new spec platform](https://spec.matrix.org) and a new versioning scheme. The new spec platform has been needed for a long time to make better sense of what Matrix is, and as part of getting that out the door we reduced the number of "Matrix versions" to just one.
+Once again it's been [a little while](/blog/2020/05/27/room-version-6-client-server-r-0-6-1-and-federation-r-0-1-4-spec-releases) since we've done a spec release (sorry; we're aiming for quarterly releases from here on out), but this time we have some pretty big news: we've got an [all-new spec platform](https://spec.matrix.org) and a new versioning scheme. The new spec platform has been needed for a long time to make better sense of what Matrix is, and as part of getting that out the door we reduced the number of "Matrix versions" to just one.
 
 Huge thanks to Will Bamberg for building it out for us, anoa for working out the deployment details, and everyone for testing it all. They talk at length about what this specification even is and about the platform itself on [Matrix Live S6E19](https://www.youtube.com/watch?v=gsdMgXug7u8). It's the single greatest improvement to the spec we've seen to date.
 
@@ -37,7 +37,7 @@ There's a few other smaller improvements/additions, and of course the regular "v
 
 [Room version 7](https://spec.matrix.org/v1.1/rooms/v7/) has landed, bringing forth the ability for users to knock on rooms (requesting an invite to join). The changes are largely scoped to using the reserved keywords for join rules and membership, and are described through the auth rules. Thankfully, the changes over v6 are minimally invasive so should be quick to implement.
 
-Additionally, the [cross-signing bits](https://spec.matrix.org/v1.1/server-server-api/#end-to-end-encryption) have been included in the API responses and EDU definitions. [Matthew's blog post](https://matrix.org/blog/2020/05/06/cross-signing-and-end-to-end-encryption-by-default-is-here) from last year (it really has been that long...) describes cross-signing and the history of its implementation.
+Additionally, the [cross-signing bits](https://spec.matrix.org/v1.1/server-server-api/#end-to-end-encryption) have been included in the API responses and EDU definitions. [Matthew's blog post](/blog/2020/05/06/cross-signing-and-end-to-end-encryption-by-default-is-here) from last year (it really has been that long...) describes cross-signing and the history of its implementation.
 
 As per usual, there's also various specification errors corrected to aid understanding. [Synapse has an exhaustive issue](https://github.com/matrix-org/synapse/issues/11079) to detail what servers might need to do.
 

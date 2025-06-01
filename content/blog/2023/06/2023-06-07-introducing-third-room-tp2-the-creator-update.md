@@ -13,7 +13,7 @@ image = "https://thirdroom.io/landing/Community.jpg"
 
 Hi all,
 
-Back in September 2022 we launched the very [first public technology preview](https://matrix.org/blog/2022/09/27/announcing-third-room-tech-preview-1) of [Third Room](https://thirdroom.io) - our entirely open source, open standards-based platform for creating decentralised multiparty spatial apps and virtual worlds on top of Matrix.
+Back in September 2022 we launched the very [first public technology preview](/blog/2022/09/27/announcing-third-room-tech-preview-1) of [Third Room](https://thirdroom.io) - our entirely open source, open standards-based platform for creating decentralised multiparty spatial apps and virtual worlds on top of Matrix.
 
 The mission of Third Room is to ensure that a truly open and equitable platform exists for powering shared 3D environments - providing an alternative to the closed walled gardens of the bigger vendors, and generally safeguard against a repeat of the fragmented dystopia that has plagued instant messaging and VoIP systems.  In short, just as Matrix aims to be the missing secure communication layer of the open Web, Third Room aims to be the spatial collaboration layer.
 
@@ -233,7 +233,7 @@ Hopefully the next release will be both the final tech preview and the first bet
 
 If you’ve read this far, you must surely be pretty interested in Third Room, and hopefully agree that having an open platform for building spatial apps and virtual worlds is absolutely critical for the health and future of the Internet - especially as the VR/AR/3D space slowly but surely gathers momentum as new players and hardware materialise.
 
-However, funding the team to work full-time on Third Room is increasingly challenging - the macroeconomic environment does not lend itself to moonshot R&D projects, and Matrix as a whole continues to suffer from [insufficient financial support](https://matrix.org/blog/2022/12/25/the-matrix-holiday-update-2022) (quite aside from Third Room).  This is particularly frustrating given the massive range of obvious commercial applications for Third Room - whether that’s for building digital twins, situational awareness, telepresence, gaming, providing an open platform to glue together real-time 3D data from other existing data feeds, etc.
+However, funding the team to work full-time on Third Room is increasingly challenging - the macroeconomic environment does not lend itself to moonshot R&D projects, and Matrix as a whole continues to suffer from [insufficient financial support](/blog/2022/12/25/the-matrix-holiday-update-2022) (quite aside from Third Room).  This is particularly frustrating given the massive range of obvious commercial applications for Third Room - whether that’s for building digital twins, situational awareness, telepresence, gaming, providing an open platform to glue together real-time 3D data from other existing data feeds, etc.
 
 To try to spell out the opportunities and why it clearly makes sense for commercial players to invest in supporting Third Room development, we recently put together a quick enterprise demo reel (which also serves to demo everything mentioned above, albeit in a more businessy manner than normal). **If this resonates and your organisation is interested in funding Third Room - please contact [funding@matrix.org](mailto:funding@matrix.org) asap.**
 

@@ -94,7 +94,7 @@ We continue our journey to get everything going as transparently as possible
 when doing fast remote room joins.
 
 If you missed it you can refer to this previous [blog
-post](https://matrix.org/blog/2022/10/18/testing-faster-remote-room-joins) to
+post](/blog/2022/10/18/testing-faster-remote-room-joins) to
 get a lot more infos, and feel free to grep Synapse changelog and the numerous
 related issues/PRs for all the gory details.
 

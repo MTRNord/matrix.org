@@ -421,6 +421,6 @@ It's very exciting that we're able to do full-time security research on Matrix
 these days (thanks to Element's funding), and going forwards we'll publish any
 interesting discoveries for the visibility and education of the whole Matrix
 community. We'd also like to remind everyone that we run an official [Security
-Disclosure Policy](https://matrix.org/security-disclosure-policy/) for
+Disclosure Policy](/security-disclosure-policy/) for
 Matrix.org and we'd welcome other researchers to come join our Hall of Fame!
 (And hopefully we will get more bounty programmes running in future.)

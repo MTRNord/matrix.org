@@ -11,7 +11,7 @@ category = ["Releases"]
 Hi all,
 
 It's been over a week since our next-generation homeserver [Dendrite entered
-beta](https://matrix.org/blog/2020/10/08/dendrite-is-entering-beta), and it's
+beta](/blog/2020/10/08/dendrite-is-entering-beta), and it's
 been a wild rollercoaster ride as the team has been frantically zapping all
 the initial teething issues that came up - mostly around room federation
 getting 'stuck' due to needing to fix bugs in how room state is managed.  Huge

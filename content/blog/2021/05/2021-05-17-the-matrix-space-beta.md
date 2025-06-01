@@ -57,7 +57,7 @@ Spaces work as follows:
 Today, we're ridiculously excited to be launching Space support as a beta in
 matrix-react-sdk and matrix-android-sdk2 (and thus Element Web/Desktop and
 Element Android) and Synapse
-[1.34.0](https://matrix.org/blog/2021/05/17/synapse-1-34-0-released) - so head
+[1.34.0](/blog/2021/05/17/synapse-1-34-0-released) - so head
 over to your nearest Element, make sure it's connected to the latest Synapse
 (and that Synapse has Spaces enabled in its config) and find some Space to
 explore! [#community:matrix.org](https://matrix.to/#/#community:matrix.org)

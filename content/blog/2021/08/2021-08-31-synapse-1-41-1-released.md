@@ -7,7 +7,7 @@ author = ["Dan Callahan"]
 category = ["Releases", "Security"]
 +++
 
-Today we are releasing Synapse 1.41.1, a security update based on last week's release of [Synapse 1.41.0](https://matrix.org/blog/2021/08/24/synapse-1-41-0-released). This release patches two moderate severity issues which could reveal metadata about private rooms:
+Today we are releasing Synapse 1.41.1, a security update based on last week's release of [Synapse 1.41.0](/blog/2021/08/24/synapse-1-41-0-released). This release patches two moderate severity issues which could reveal metadata about private rooms:
 
 - **[GHSA-3x4c-pq33-4w3q](https://github.com/matrix-org/synapse/security/advisories/GHSA-3x4c-pq33-4w3q) / CVE-2021-39164: Enumerating a private room's list of members and their display names.**
 

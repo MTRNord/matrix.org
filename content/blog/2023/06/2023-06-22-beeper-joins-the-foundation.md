@@ -26,7 +26,7 @@ company hosts bridges for its users. The experience is completely transparent
 for them.
 
 Matrix was an obvious choice in Beeper's stack because of its interoperable
-nature. [Bridges](https://matrix.org/ecosystem/bridges/) are the core of
+nature. [Bridges](/ecosystem/bridges/) are the core of
 Beeper's business: they are the most active bridges maintainer of the Matrix
 ecosystem, and most of them are open source too. It makes a lot of sense for
 Beeper to build on top of Matrix so they don't have to reinvent the wheel:
@@ -63,4 +63,4 @@ support the stack they rely on! As for organisations who depend on Matrix: we
 still need your support to make Matrix sustainable.
 
 Join us in our mission to make Matrix the ubiquitous foundation for respectful
-products and services, [become a member today](https://matrix.org/membership)!
+products and services, [become a member today](/membership)!

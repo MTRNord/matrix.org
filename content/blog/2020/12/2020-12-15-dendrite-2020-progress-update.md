@@ -12,7 +12,7 @@ been a busy one at that! We started off 2020 by sprinting to complete the FOSDEM
 demo and, since then, we have continued to develop Dendrite into a more featureful
 and stable homeserver.
 
-In October, we [moved Dendrite into beta](https://matrix.org/blog/2020/10/08/dendrite-is-entering-beta),
+In October, we [moved Dendrite into beta](/blog/2020/10/08/dendrite-is-entering-beta),
 and have since released a number of releases. We've also seen quite a lot of interest
 from the community, so I'm here today to write about some of the fun things that have
 been going on in Dendrite-land.
@@ -63,7 +63,7 @@ not limited to:
   management
 * Lots of great contributions from the community - including all of Read Receipts (thanks to [S7evinK](https://github.com/S7evinK)) and Read Markers (thanks to [Lesterpig](https://github.com/Lesterpig))!
 
-...and of course [entered Beta](https://matrix.org/blog/2020/10/08/dendrite-is-entering-beta) in October!
+...and of course [entered Beta](/blog/2020/10/08/dendrite-is-entering-beta) in October!
 
 ## Spec compliance
 
@@ -141,6 +141,6 @@ fixes and features in recent months! We always welcome code contributions via
 
 As always, stay tuned for more Dendrite updates either by joining us in
 [#dendrite:matrix.org](https://matrix.to/#/#dendrite:matrix.org) or by getting your
-regular dose of [This Week in Matrix](https://matrix.org/blog/category/this-week-in-matrix)!
+regular dose of [This Week in Matrix](/blog/category/this-week-in-matrix)!
 
 — Neil Alexander and Kegan

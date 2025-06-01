@@ -14,7 +14,7 @@ Before we explain all about our new authentication system - don't panic! This ch
 
 ## Nothing breaks
 
-Matrix 2.0 is a reference to Matthew’s FOSDEM talk [Matrix 2.0](https://archive.fosdem.org/2023/schedule/event/matrix20/), itself a reference to the name he coined in the [Matrix Summer Special 2022](https://matrix.org/blog/2022/08/15/the-matrix-summer-special-2022/#matrix-2-0): evolutions of the spec that are making the Matrix experience so much better it almost feels like a different protocol. One of the major changes in this bundle is the introduction of OpenID Connect-native Matrix and its implementation [matrix-authentication-service](https://github.com/matrix-org/matrix-authentication-service/) (MAS).
+Matrix 2.0 is a reference to Matthew’s FOSDEM talk [Matrix 2.0](https://archive.fosdem.org/2023/schedule/event/matrix20/), itself a reference to the name he coined in the [Matrix Summer Special 2022](/blog/2022/08/15/the-matrix-summer-special-2022/#matrix-2-0): evolutions of the spec that are making the Matrix experience so much better it almost feels like a different protocol. One of the major changes in this bundle is the introduction of OpenID Connect-native Matrix and its implementation [matrix-authentication-service](https://github.com/matrix-org/matrix-authentication-service/) (MAS).
 
 **Don’t panic: your current setup is not at risk, you don’t urgently need to deploy the [matrix-authentication-service](https://github.com/matrix-org/matrix-authentication-service/) to keep using Matrix.**
 

@@ -7,7 +7,7 @@ author = ["Thib"]
 category = ["Bridges", "Security"]
 +++
 
-We have recently announced that [we will be honouring Libera Chat’s request](https://matrix.org/blog/2023/07/deportalling-libera-chat/) to turn off portalled rooms on the Libera.Chat bridge maintained by the Matrix.org Foundation. The changes were originally scheduled to be effective on 31st July. In the meantime, we posted [instructions for people to turn their portalled rooms into plumbed ones](https://matrix.org/blog/2023/07/make-sure-libera-bridge-keeps-working/) so the bridge keeps working for them.
+We have recently announced that [we will be honouring Libera Chat’s request](/blog/2023/07/deportalling-libera-chat/) to turn off portalled rooms on the Libera.Chat bridge maintained by the Matrix.org Foundation. The changes were originally scheduled to be effective on 31st July. In the meantime, we posted [instructions for people to turn their portalled rooms into plumbed ones](/blog/2023/07/make-sure-libera-bridge-keeps-working/) so the bridge keeps working for them.
 
 Some stability issues on the bridge have prevented people from turning their portalled rooms into plumbed ones. We have been actively working on resolving those issues since the first reports and the situation is gradually improving. However, at this point, we do not believe the plumbed mode can be considered sufficiently stable yet. 
 

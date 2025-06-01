@@ -16,8 +16,8 @@ For the past two years, FOSDEM couldn’t happen in-person. Fortunately we could
 help, and Matrix hosted the world's largest free & open source software
 conference online! This year we were finally back in-person… but not only.
 
-[The set-up we have arranged in 2021](https://matrix.org/blog/2021/02/15/how-we-hosted-fosdem-2021-on-matrix)
-and [polished in 2022](https://matrix.org/blog/2022/02/07/hosting-fosdem-2022-on-matrix)
+[The set-up we have arranged in 2021](/blog/2021/02/15/how-we-hosted-fosdem-2021-on-matrix)
+and [polished in 2022](/blog/2022/02/07/hosting-fosdem-2022-on-matrix)
 has proved to be robust and served us well during the pandemic. Returning to an
 in-person conference didn’t mean we had to throw it all away… quite the
 opposite!
@@ -38,7 +38,7 @@ on site.
 For us, it was also an opportunity to announce Matrix 2.0 to a live audience!
 Matrix 2.0 doesn’t mean we’re making breaking changes in the spec. It’s more of
 a nickname we gave to the milestone [we had promised in summer to deliver by the
-end of the year](https://matrix.org/blog/2022/08/15/the-matrix-summer-special-2022#matrix-20)
+end of the year](/blog/2022/08/15/the-matrix-summer-special-2022#matrix-20)
 and had far too much giving the mother of all demos to a packed room of nearly
 1500 people.
 

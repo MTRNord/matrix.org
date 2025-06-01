@@ -34,7 +34,7 @@ The Matrix.org Foundation would have liked to find an efficient way to let peopl
 
 Those accounts make up a significant load on the matrix.org homeserver. For that reason, the Matrix.org Foundation has decided to disable them at least temporarily to save precious resources and go ahead with the rollout of the new authentication stack.
 
-The Matrix.org Foundation is open to re-enabling guests accounts once it has the financial capacity to support them. If guest accounts on matrix.org are important to you and your business, please [join the Matrix.org Foundation as a supporting member](https://matrix.org/membership/) to contribute to its financial sustainability.
+The Matrix.org Foundation is open to re-enabling guests accounts once it has the financial capacity to support them. If guest accounts on matrix.org are important to you and your business, please [join the Matrix.org Foundation as a supporting member](/membership/) to contribute to its financial sustainability.
 
 We encourage developers using guest access for room information, such as topics, aliases, or member counts, to utilize the endpoint proposed by [MSC3266](https://github.com/matrix-org/matrix-spec-proposals/pull/3266). This endpoint is publicly accessible without authentication and can serve as an alternative resource until guest access is reinstated in a more robust form.
 

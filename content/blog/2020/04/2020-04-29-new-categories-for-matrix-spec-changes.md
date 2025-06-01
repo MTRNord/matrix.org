@@ -14,7 +14,7 @@ image = "https://matrix.org/blog/img/2020-04-28-msc-banner.png"
 
 On April 14th, the Spec Core Team conducted a long-overdue retrospective
 about the things that were working in the
-[Matrix Spec Proposal process](https://matrix.org/docs/spec/proposals),
+[Matrix Spec Proposal process](/docs/spec/proposals),
 and those that were not.
 
 The most glaring item on the list was the sluggish pace that many Matrix
@@ -58,7 +58,7 @@ finally merging
 [reactions and edits](https://github.com/matrix-org/matrix-doc/pull/1849) into the spec.
 
 While we announce what MSCs we're focusing on during a given week during
-[TWIM](https://matrix.org/twim), it's not as clear which items we're looking
+[TWIM](/twim), it's not as clear which items we're looking
 to pull from the backlog next. To help tackle this, and to help keep us
 honest, we've begun putting each MSC into either "feature", "maintenance", or
 "core" buckets. This materialises in the form of github tags, which can be
@@ -68,7 +68,7 @@ used to filter the list of MSCs like so:
 [core](https://github.com/matrix-org/matrix-doc/issues?q=is%3Aopen+label%3Akind%3Acore).
 For a given timespan, we’ll pick a track and pull MSCs out of that category
 when possible. More information about MSC categories are now detailed on
-[the proposals page](https://matrix.org/docs/spec/proposals#categories).
+[the proposals page](/docs/spec/proposals#categories).
 
 As for the next 6 to 12 months, we plan to work on items from the “core”
 category. We need to get Matrix to a point where it can compete with other,

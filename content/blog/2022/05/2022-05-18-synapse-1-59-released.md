@@ -21,7 +21,7 @@ In the past, Synapse only provided a specific set of types of workers, each
 capable of handling a specific set of operations. For some time now we have been
 working on allowing more flexibility around worker configuration, which started
 all the way back in [Synapse
-1.12.0](https://matrix.org/blog/2020/03/23/synapse-1-12-0-released) with the
+1.12.0](/blog/2020/03/23/synapse-1-12-0-released) with the
 introduction of a generic worker application type.
 
 Synapse 1.59 furthers this work by deprecating the `synapse.app.appservice` and

@@ -30,7 +30,7 @@ Synapse, that wouldn't necessarily be generic enough to fit within the Matrix
 specification. This includes custom behaviours such as smarter event filters,
 bespoke media storage providers, or spam checkers. Since we rewrote Synapse's
 module system in [Synapse
-1.37](https://matrix.org/blog/2021/06/30/security-update-synapse-1-37-1-released#synapse-137-release-announcement),
+1.37](/blog/2021/06/30/security-update-synapse-1-37-1-released#synapse-137-release-announcement),
 we have been improving it by adding new callback functions that module can
 implement, allowing them to interface better with Synapse.
 
@@ -40,7 +40,7 @@ allows modules to define the display name for newly registered users. Together
 with the existing
 [`get_username_for_registration`](https://matrix-org.github.io/synapse/v1.54/modules/password_auth_provider_callbacks.html#get_username_for_registration)
 introduced in [Synapse
-1.52](https://matrix.org/blog/2022/02/08/synapse-1-52-released/), they allow
+1.52](/blog/2022/02/08/synapse-1-52-released/), they allow
 modules a better control over the user registration process.
 
 The two other module callbacks introduced in Synapse 1.54,
@@ -54,14 +54,14 @@ reactivation) of users.
 
 This release of Synapse also includes more work to make joining large Matrix
 rooms faster (I was telling you about that in the [Synapse 1.53 release
-announcement](https://matrix.org/blog/2022/02/22/synapse-1-53-released)). While
+announcement](/blog/2022/02/22/synapse-1-53-released)). While
 it's still very experimental and not yet ready for show time, it's still very
 exciting to see this work happening!
 
 Synapse 1.54 also includes a change to the [client-side versions
 endpoint](https://spec.matrix.org/latest/client-server-api/#get_matrixclientversions)
 to advertise Matrix 1.1 and 1.2. See the [Matrix
-1.2](https://matrix.org/blog/2022/02/02/matrix-v-1-2-release) release
+1.2](/blog/2022/02/02/matrix-v-1-2-release) release
 announcement to read all about the changes this latest version of the
 specification brings to the ecosystem.
 

@@ -67,7 +67,7 @@ On the New Vector side, this funding will support:
 While New Vector’s contributions to the Matrix ecosystem can’t be ignored,
 it’s important to remember that the Matrix protocol and specification itself
 is governed and controlled by the independent and neutral [Matrix.org
-Foundation](https://matrix.org/foundation) and its [extensive governance
+Foundation](/foundation) and its [extensive governance
 processes](https://github.com/matrix-org/matrix-doc/blob/master/proposals/1779-open-governance.md).
  We set up the Foundation *very* deliberately to enforce the protocol's
 neutrality, formalise the project's mission, goals and values and hold true to

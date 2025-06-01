@@ -12,12 +12,12 @@ category = ["GSOC"]
 
 During GSoC 2019, I participated in and pushed forward the development of
 [Dendrite][dendrite], a high-performance, scalable [Matrix
-homeserver](https://matrix.org/docs/guides/introduction) implementation written
+homeserver](/docs/guides/introduction) implementation written
 in Go.
 
 Like many others passionate about Dendrite, I've been eager to see the day when
 it finally joins the decentralised, federated [Matrix
-network](https://matrix.org/), so I worked on the project to see how much I
+network](/), so I worked on the project to see how much I
 could do to bridge the gap between it and the current reference homeserver
 implementation, [Synapse](https://github.com/matrix-org/synapse), in terms of
 feature completeness.

@@ -22,8 +22,8 @@ fee, and in return gets some influence in driving the direction of Matrix and
 the Foundation's activities.
 
 The key has been to create a balanced governance model, to make sure the
-Foundation stays aligned with the [Matrix manifesto](https://matrix.org/about/#matrix-manifesto).
-For this we've created a [Governing Board](https://matrix.org/membership/) to
+Foundation stays aligned with the [Matrix manifesto](/about/#matrix-manifesto).
+For this we've created a [Governing Board](/membership/) to
 set the direction of the Foundation whilst the membership fees will fuel our
 efforts to get us there.
 
@@ -46,8 +46,8 @@ which are key to having full control over one's own communication. By
 financially supporting the project, people who are aligned with our beliefs
 allow us to keep fighting for our collective rights, be it by providing secure
 software or persuading regulators to protect their citizens (such as our
-[DMA promotion work](https://matrix.org/blog/2023/03/15/the-dma-stakeholder-workshop-interoperability-between-messaging-services/)
-or our [fight against the Online Safety Bill](https://matrix.org/blog/2021/05/19/how-the-u-ks-online-safety-bill-threatens-matrix)).
+[DMA promotion work](/blog/2023/03/15/the-dma-stakeholder-workshop-interoperability-between-messaging-services/)
+or our [fight against the Online Safety Bill](/blog/2021/05/19/how-the-u-ks-online-safety-bill-threatens-matrix)).
 
 **A curated protocol benefits profit-making companies building communication
 products and services.** Decentralisation is a hard problem. End-to-end
@@ -140,11 +140,11 @@ for fresh ideas without losing context of the previous decisions.
 Finally, this membership scheme is also meant to formalise and better distribute
 the relations of power in the Matrix ecosystem, to make it more independent of
 specific vendors. We believe this is a major next step to make Matrix thrive,
-and [welcome everyone to join us in our mission](https://matrix.org/membership).
+and [welcome everyone to join us in our mission](/membership).
 You can also check our Prospective Members presentation [here](https://drive.google.com/file/d/18YSlh5Uv2YMb6QaLi4fFu7Xv1uSWKAo7/view?usp=drive_link)
 for more details. 
 
 **In short, become a member today!**
 
 Send an email to [funding@matrix.org](mailto:funding@matrix.org) or browse
-[matrix.org/membership](https://matrix.org/membership)
+[matrix.org/membership](/membership)

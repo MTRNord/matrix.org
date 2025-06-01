@@ -34,7 +34,7 @@ image = "https://matrix.org/blog/img/nHPgFgyvkPnvPDETuAFzniPw.png"
 
 [Andrew Morgan (anoa)](https://matrix.to/#/@andrewm:element.io) reports
 
-> Here's your weekly spec update! The heart of Matrix is the specification - and this is modified by Matrix Spec Change (MSC) proposals. Learn more about how the process works at <https://matrix.org/docs/spec/proposals>.
+> Here's your weekly spec update! The heart of Matrix is the specification - and this is modified by Matrix Spec Change (MSC) proposals. Learn more about how the process works at </docs/spec/proposals>.
 > 
 > ## MSC Status
 > 
@@ -318,7 +318,7 @@ A TypeScript/JavaScript SDK for Matrix bots
 
 > [matrix-bot-sdk](https://github.com/turt2live/matrix-bot-sdk) has just had a [v0.6.2](https://github.com/turt2live/matrix-bot-sdk/releases/tag/v0.6.2) release with mostly bug fixes this time around. Please give it a go, and if you run into issues please report bugs or visit [#matrix-bot-sdk:t2bot.io](https://matrix.to/#/#matrix-bot-sdk:t2bot.io) 🙂 
 > 
-> Also, check out the [matrix.org guide](https://matrix.org/docs/guides/usage-of-matrix-bot-sdk) to learn more about how to use this SDK.
+> Also, check out the [matrix.org guide](/docs/guides/usage-of-matrix-bot-sdk) to learn more about how to use this SDK.
 
 ## Dept of Bots 🤖
 

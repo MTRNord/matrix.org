@@ -41,7 +41,7 @@ Of course, the proposal must respect the FOSDEM terms as well:
 
 Proposals must be submitted on FOSDEM's conference management system: <https://pretalx.fosdem.org/>. Heads up that this year FOSDEM is not relying on the good old Pentabarf but on Pretalx. All submissions must go through pretalx: <https://fosdem.org/submit>
 
-We expect to receive more requests than we have slots available. The devroom organisers will be reviewing the proposals and accepting them based on the potential positive impact the project has on Matrix, as defined in the Mission section of <https://matrix.org/foundation>.
+We expect to receive more requests than we have slots available. The devroom organisers will be reviewing the proposals and accepting them based on the potential positive impact the project has on Matrix, as defined in the Mission section of </foundation>.
 
 If a project proposal has been turned down, it doesn't mean we don't believe it has good potential. Maintainers are invited to join the <https://matrix.to/#/#twim:matrix.org> Matrix room to give it some visibility.
 

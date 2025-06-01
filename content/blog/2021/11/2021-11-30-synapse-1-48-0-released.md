@@ -21,7 +21,7 @@ Admins of servers still using this configuration option will need to update thei
 
 This release also introduces a handful of new admin APIs, allowing administrators to [un-shadow-ban users](https://matrix-org.github.io/synapse/latest/admin_api/user_admin_api.html#controlling-whether-a-user-is-shadow-banned), [block a room](https://matrix-org.github.io/synapse/latest/admin_api/rooms.html#block-room-api), and [run specific background updates](https://matrix-org.github.io/synapse/latest/usage/administration/admin_api/background_updates.html#run) (but we'll talk about this last one a bit later on). The [delete room API](https://matrix-org.github.io/synapse/latest/admin_api/rooms.html#delete-room-api) has also been updated to be able to run in the background or to block a room pre-emptively, even if the server doesn't know about it yet.
 
-This release also brings Synapse into greater alignment with version 1.1 of [the Matrix specification](https://matrix.org/blog/2021/11/09/matrix-v-1-1-release) by adding support for API paths beginning `/_matrix/client/v3` and `/_matrix/media/v3`.
+This release also brings Synapse into greater alignment with version 1.1 of [the Matrix specification](/blog/2021/11/09/matrix-v-1-1-release) by adding support for API paths beginning `/_matrix/client/v3` and `/_matrix/media/v3`.
 
 ## Background updates
 

@@ -20,7 +20,7 @@ A short Matrix Live where we can see the goodness coming to Element very shortly
 
 [Andrew Morgan (anoa)](https://matrix.to/#/@andrewm:element.io) announces
 
-> Here's your weekly spec update! The heart of Matrix is the specification - and this is modified by Matrix Spec Change (MSC) proposals. Learn more about how the process works at <https://matrix.org/docs/spec/proposals>.
+> Here's your weekly spec update! The heart of Matrix is the specification - and this is modified by Matrix Spec Change (MSC) proposals. Learn more about how the process works at </docs/spec/proposals>.
 >
 > ## MSC Status
 >

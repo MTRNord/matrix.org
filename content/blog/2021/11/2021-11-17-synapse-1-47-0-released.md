@@ -38,7 +38,7 @@ This week also saw the release of [Sydent 2.5.1](https://github.com/matrix-org/s
 
 ## Everything Else
 
-In the background, we're still working away at implementing [MSC3440](https://github.com/matrix-org/matrix-doc/pull/3440) to facilitate threading. Early tests are promising. We're also exploring [MSC2775](https://github.com/matrix-org/matrix-doc/pull/2775) as a means to speed up room joins. Both will be long term projects that should hopefully reap major rewards for the Matrix ecosystem. Lastly, there's support for [MSC3228](https://github.com/matrix-org/matrix-doc/pull/3288) to allow identity servers to provide bespoke invites to spaces. We mentioned this [last time](https://matrix.org/blog/2021/11/02/synapse-1-46-0-released#sydent-250) in Sydent release notes; now we've got support for it on the Synapse side.
+In the background, we're still working away at implementing [MSC3440](https://github.com/matrix-org/matrix-doc/pull/3440) to facilitate threading. Early tests are promising. We're also exploring [MSC2775](https://github.com/matrix-org/matrix-doc/pull/2775) as a means to speed up room joins. Both will be long term projects that should hopefully reap major rewards for the Matrix ecosystem. Lastly, there's support for [MSC3228](https://github.com/matrix-org/matrix-doc/pull/3288) to allow identity servers to provide bespoke invites to spaces. We mentioned this [last time](/blog/2021/11/02/synapse-1-46-0-released#sydent-250) in Sydent release notes; now we've got support for it on the Synapse side.
 
 Please see the Synapse [Release Notes](https://github.com/matrix-org/synapse/blob/v1.47.0/CHANGES.md) for a complete list of changes in this release.
 

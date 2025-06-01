@@ -12,7 +12,7 @@ image = "https://matrix.org/blog/img/2020-09-30-gitter.png"
 
 Hi all,
 
-It’s been just over 2 months since we revealed that [Gitter was going to join Matrix](https://matrix.org/blog/2020/09/30/welcoming-gitter-to-matrix) - and
+It’s been just over 2 months since we revealed that [Gitter was going to join Matrix](/blog/2020/09/30/welcoming-gitter-to-matrix) - and
 we are incredibly proud to announce that Gitter has officially turned on true native Matrix connectivity:
 **all public Gitter rooms are now available natively via Matrix, and all Gitter users now natively exist on Matrix.**
 So, if you wanted to join the official Node.js language support room at [https://gitter.im/nodejs/node](https://gitter.im/nodejs/node)
@@ -95,7 +95,7 @@ In practice, Eric (lead Gitter dev) laid out the waypoints of the full journey:
 
 Meanwhile, the Matrix side of gitter.im is hosted by [Element Matrix Services](https://element.io/matrix-services) and is a plain old Synapse, talking through to Gitter via the Application Service API. An alternative architecture would be to have got Gitter directly federating with Matrix by embedding a “homeserver library” into it (e.g. embedding [Dendrite](https://github.com/matrix-org/dendrite)). However, given Dendrite is still beta and assumes it is storing its data itself (rather than persisting in an existing backend such as Gitter’s mongodb), we went for the simpler option to start with.
 
-It’s been really interesting to see how this has played out week by week in the Gitter updates in This Week in Matrix: you can literally track the progress and see how the integration came to life between [Oct 9](https://matrix.org/blog/2020/10/09/this-week-in-matrix-2020-10-09#gitter), [Oct 23](https://matrix.org/blog/2020/10/23/this-week-in-matrix-2020-10-23#gitter), [Nov 6](https://matrix.org/blog/2020/11/06/this-week-in-matrix-2020-11-06#gitter), [Nov 27](https://matrix.org/blog/2020/11/27/this-week-in-matrix-2020-11-27#gitter) and finally [Dec 4](https://matrix.org/blog/2020/12/04/this-week-in-matrix-2020-12-04#gitter).
+It’s been really interesting to see how this has played out week by week in the Gitter updates in This Week in Matrix: you can literally track the progress and see how the integration came to life between [Oct 9](/blog/2020/10/09/this-week-in-matrix-2020-10-09#gitter), [Oct 23](/blog/2020/10/23/this-week-in-matrix-2020-10-23#gitter), [Nov 6](/blog/2020/11/06/this-week-in-matrix-2020-11-06#gitter), [Nov 27](/blog/2020/11/27/this-week-in-matrix-2020-11-27#gitter) and finally [Dec 4](/blog/2020/12/04/this-week-in-matrix-2020-12-04#gitter).
 
 Huge thanks go to Eric Eastwood, the lead dev of Gitter and mastermind behind the project - and also to Half-Shot and Christian who’ve been providing all the support and review from the Matrix bridging team.
 
@@ -103,7 +103,7 @@ Huge thanks go to Eric Eastwood, the lead dev of Gitter and mastermind behind th
 
 First and foremost we’re going to be working through the “What remains” section of the list above: killing off the old bridge, sorting out plumbed rooms, hooking up DMs, importing old Gitter history into Matrix, etc. This should then give us an exceptionally low impedance link between Gitter & Matrix.
 
-Then, [as per our original announcement](https://matrix.org/blog/2020/09/30/welcoming-gitter-to-matrix), the plan is:
+Then, [as per our original announcement](/blog/2020/09/30/welcoming-gitter-to-matrix), the plan is:
 
 _In the medium/long term, it’s simply not going to be efficient for the combined Element/Gitter team to split our efforts maintaining two high-profile Matrix clients. Our plan is instead to merge Gitter’s features into Element (or next generations of Element) itself and then - if and only if Element has achieved parity with Gitter - we expect to upgrade the deployment on gitter.im to a Gitter-customised version of Element. The inevitable side-effect is that we’ll be adding new features to Element rather than Gitter going forwards._
 

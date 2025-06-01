@@ -47,7 +47,7 @@ Architecturally, it looked like this:
 
 ![](/blog/img/upload_06b59bc2b2d518ffe616020e1fe5bee8.png)
 
-On the clientside, we made heavy use of widgets: the ability to embed arbitrary web content as iframes into Matrix chatrooms. (Widgets currently exist as a set of [proposals](https://matrix.org/docs/spec/proposals) for the Matrix spec, which have been preemptively implemented in Element.)
+On the clientside, we made heavy use of widgets: the ability to embed arbitrary web content as iframes into Matrix chatrooms. (Widgets currently exist as a set of [proposals](/docs/spec/proposals) for the Matrix spec, which have been preemptively implemented in Element.)
 
 For instance, the conference-bot created Matrix rooms for all the FOSDEM devrooms with a predefined widget for viewing the official FOSDEM livestream for that room, pointing at the appropriate HLS stream at stream.fosdem.org - which looked like this:
 
@@ -75,9 +75,9 @@ There was also an explosion of changes to Element itself to try to make things g
 
 ![](/blog/img/upload_45b228cf122b2faedfca5e36b6d52576.png)
 
-This was a real epic to get together (and is also an important part of [achieving parity](https://matrix.org/blog/2020/12/07/gitter-now-speaks-matrix) between Gitter and Element) - and seems to have been surprisingly successful for FOSDEM.  Almost 50% of users who signed up on the FOSDEM server did so via social login!  We should also be turning it on for the matrix.org server this week.
+This was a real epic to get together (and is also an important part of [achieving parity](/blog/2020/12/07/gitter-now-speaks-matrix) between Gitter and Element) - and seems to have been surprisingly successful for FOSDEM.  Almost 50% of users who signed up on the FOSDEM server did so via social login!  We should also be turning it on for the matrix.org server this week.
 
-Finally, on the Matrix server side, we ran a cluster of synapse worker processes (1 federation inbound, reader and sender, 1 pusher, 1 initial sync worker, 10 synchrotrons, 1 event persister, 1 event creator, 4 general purpose client readers, 1 typing worker and 1 user directory) within Kubernetes on [EMS](https://ems.element.io).  These were hooked up for [horizontal scalability](https://matrix.org/blog/2020/11/03/how-we-fixed-synapses-scalability/) as follows:
+Finally, on the Matrix server side, we ran a cluster of synapse worker processes (1 federation inbound, reader and sender, 1 pusher, 1 initial sync worker, 10 synchrotrons, 1 event persister, 1 event creator, 4 general purpose client readers, 1 typing worker and 1 user directory) within Kubernetes on [EMS](https://ems.element.io).  These were hooked up for [horizontal scalability](/blog/2020/11/03/how-we-fixed-synapses-scalability/) as follows:
 
 ![](/blog/img/upload_22b8ea14fff89c1bce93767b82ab1db5.png)
 
@@ -111,7 +111,7 @@ Other things we'd change if we have the chance to do it again include:
 
 So, there you have it.  We hope that this shows that it's possible to host successful large-scale conferences on Matrix using an [entirely open source stack](https://sfconservancy.org/blog/2021/feb/08/just-say-no-to-zoom/), and we hope that other events will be inspired to go online via Matrix!  We should give a big shout out to [HOPE](https://hope.net), who independently trailblazed running conferences on Matrix last year and [inspired us](https://hackaday.com/2020/08/11/hope-2020-delivers-historic-marathon-of-hacking/) to make FOSDEM work.
 
-If you want to know more, we also did a talk about FOSDEM-on-Matrix in this month's [Open Tech Will Save Us](https://youtu.be/Wp2rSyqZsbs?t=4903) meetup and the [Building Massive Virtual Communities on Matrix](https://www.youtube.com/watch?v=TzUfS08lMek) talk at FOSDEM went into more detail too.  Our historical [Taking FOSDEM online via Matrix](https://matrix.org/blog/2021/01/04/taking-fosdem-online-via-matrix) blog has been somewhat overtaken by events but gives further context still.
+If you want to know more, we also did a talk about FOSDEM-on-Matrix in this month's [Open Tech Will Save Us](https://youtu.be/Wp2rSyqZsbs?t=4903) meetup and the [Building Massive Virtual Communities on Matrix](https://www.youtube.com/watch?v=TzUfS08lMek) talk at FOSDEM went into more detail too.  Our historical [Taking FOSDEM online via Matrix](/blog/2021/01/04/taking-fosdem-online-via-matrix) blog has been somewhat overtaken by events but gives further context still.
 
 Finally, huge thanks to FOSDEM for letting Matrix host the social side of the conference.  This was a big bet, starting from scratch with our [offer to help](https://twitter.com/matrixdotorg/status/1301285515774373889) back in September, and we hope it paid off.  Also, thanks to all the folks at Element who bust a gut to pull it together - and to the FOSDEM organisers, who were a real pleasure to work with.
 

@@ -26,7 +26,7 @@ That said, it’s super early days for integration work, and there isn’t a con
 
 It’s been loads of fun working with Matt and the team on this: we see a huge overlap in terms of a genuine love for the open web, open source and open standards.  It’s also no coincidence that Matt (independently of Automattic) donated substantially to Matrix via Patreon back in 2017 when we needed it the most.  We’re also looking forward to benefiting from Automattic’s experience in sustainably and responsibly funding and growing open source projects in general - WordPress.com is an excellent example of how one can support development of a project like WordPress without compromising its open source nature.
 
-So, we’d like to formally welcome WordPress and the rest of the Automattic family into Matrix.  It’s incredibly exciting times, and we can’t wait to see what will come of the partnership!  And meanwhile, if any other massive open source organisations want to join Automattic and [Mozilla](https://matrix.org/blog/2019/12/19/welcoming-mozilla-to-matrix) in leaping into Matrix, you know where to find us… :D
+So, we’d like to formally welcome WordPress and the rest of the Automattic family into Matrix.  It’s incredibly exciting times, and we can’t wait to see what will come of the partnership!  And meanwhile, if any other massive open source organisations want to join Automattic and [Mozilla](/blog/2019/12/19/welcoming-mozilla-to-matrix) in leaping into Matrix, you know where to find us… :D
 
 Huge thanks go to Matt for believing in Matrix - watch this space for updates.
 

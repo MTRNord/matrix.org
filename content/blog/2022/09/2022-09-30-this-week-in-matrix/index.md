@@ -22,7 +22,7 @@ category = ["This Week in Matrix"]
 [Thib](https://matrix.to/#/@thib:ergaster.org) adds
 
 > For a balanced coveraged of the vulnerability, see the following articles:
-> * [Matrix.org Foundation — Upgrade now to address E2EE vulnerabilities in matrix-js-sdk, matrix-ios-sdk and matrix-android-sdk2](https://matrix.org/blog/2022/09/28/upgrade-now-to-address-encryption-vulns-in-matrix-sdks-and-clients)
+> * [Matrix.org Foundation — Upgrade now to address E2EE vulnerabilities in matrix-js-sdk, matrix-ios-sdk and matrix-android-sdk2](/blog/2022/09/28/upgrade-now-to-address-encryption-vulns-in-matrix-sdks-and-clients)
 > * [The original paper — Practically-exploitable Cryptographic Vulnerabilities in Matrix](https://nebuchadnezzar-megolm.github.io)
 > * [ars technica — Serious vulnerabilities in Matrix’s end-to-end encryption have been patched](https://arstechnica.com/information-technology/2022/09/matrix-patches-vulnerabilities-that-completely-subvert-e2ee-guarantees/)
 
@@ -30,7 +30,7 @@ category = ["This Week in Matrix"]
 
 [Andrew Morgan (anoa)](https://matrix.to/#/@andrewm:element.io) reports
 
-> Here's your weekly spec update! The heart of Matrix is the specification - and this is modified by Matrix Spec Change (MSC) proposals. Learn more about how the process works at <https://matrix.org/docs/spec/proposals>.
+> Here's your weekly spec update! The heart of Matrix is the specification - and this is modified by Matrix Spec Change (MSC) proposals. Learn more about how the process works at </docs/spec/proposals>.
 >
 > ## MSC Status
 >
@@ -51,7 +51,7 @@ category = ["This Week in Matrix"]
 >
 > ## Spec updates
 >
-> This last week the SCT has largely been focusing on getting [Matrix 1.4](https://matrix.org/blog/2022/09/29/matrix-v-1-4-release) out the door, with threads being the last major piece of it all 🎉
+> This last week the SCT has largely been focusing on getting [Matrix 1.4](/blog/2022/09/29/matrix-v-1-4-release) out the door, with threads being the last major piece of it all 🎉
 >
 > With the inclusion of edits and private read receipts too, it's one of the larger feature releases we've done in a while, but fret not: v1.5 (due approximately November 2022) is expected to be mostly spec maintenance rather than features this time around. That said, if you have any MSCs you think would be good to include in v1.5, please let us know in the [#sct-office:matrix.org](https://matrix.to/#/#sct-office:matrix.org) so we can figure out how to make forward progress on them.
 >
@@ -106,7 +106,7 @@ Synapse is a Matrix homeserver implementation developed by the matrix.org core t
 >
 > * Add an admin API endpoint to fetch messages within a particular window of time.
 > * Add an admin API endpoint to find a user based on their external ID in an auth provider.
-> Plus a host of bugfixes, internal changes to speed up Synapse 🚀(including work on faster joins-stay tuned as this is quickly approaching), improvements to the documentation, and more. Check it out here!: <https://matrix.org/blog/2022/09/27/synapse-1-68-released>
+> Plus a host of bugfixes, internal changes to speed up Synapse 🚀(including work on faster joins-stay tuned as this is quickly approaching), improvements to the documentation, and more. Check it out here!: </blog/2022/09/27/synapse-1-68-released>
 
 ### Dendrite ([website](https://github.com/matrix-org/dendrite))
 
@@ -330,7 +330,7 @@ Everything related to Element but not strictly bound to a client
 >
 > The issues are fixed by the upgrades. Neither Element or Matrix have seen any evidence of them being exploited in the wild.
 >
-> For the full background on the update, visit the [Matrix blog post.](https://matrix.org/blog/2022/09/28/upgrade-now-to-address-encryption-vulns-in-matrix-sdks-and-clients)
+> For the full background on the update, visit the [Matrix blog post.](/blog/2022/09/28/upgrade-now-to-address-encryption-vulns-in-matrix-sdks-and-clients)
 
 ### Cinny ([website](https://cinny.in))
 

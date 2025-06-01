@@ -9,7 +9,7 @@ author = ["Matrix Security Team"]
 category = ["Security"]
 +++
 
-Today we are releasing security updates to libolm, matrix-js-sdk, and several clients including Element Web / Desktop. Users are encouraged to upgrade as soon as possible. This resolves the [pre-disclosure](https://matrix.org/blog/2021/12/03/pre-disclosure-upcoming-security-release-of-libolm-and-matrix-js-sdk) issued on December 3rd.
+Today we are releasing security updates to libolm, matrix-js-sdk, and several clients including Element Web / Desktop. Users are encouraged to upgrade as soon as possible. This resolves the [pre-disclosure](/blog/2021/12/03/pre-disclosure-upcoming-security-release-of-libolm-and-matrix-js-sdk) issued on December 3rd.
 
 Fixed library versions are:
 
@@ -34,4 +34,4 @@ Separately from the above vulnerability, we noticed during an internal audit tha
 
 Lastly, we are also taking this opportunity to update the version of Electron bundled with Element Desktop, pulling in the latest backported security fixes there.
 
-The buffer overflow was found and reported by GitHub user [@brevilo](https://github.com/brevilo) in the course of developing [jOlm](https://github.com/brevilo/jolm/), a library of Java bindings to libolm; thank you. If you believe you've discovered a security vulnerability in Matrix or its implementations, please see our [Security Disclosure Policy](https://matrix.org/security-disclosure-policy/) for how to get in touch.
+The buffer overflow was found and reported by GitHub user [@brevilo](https://github.com/brevilo) in the course of developing [jOlm](https://github.com/brevilo/jolm/), a library of Java bindings to libolm; thank you. If you believe you've discovered a security vulnerability in Matrix or its implementations, please see our [Security Disclosure Policy](/security-disclosure-policy/) for how to get in touch.

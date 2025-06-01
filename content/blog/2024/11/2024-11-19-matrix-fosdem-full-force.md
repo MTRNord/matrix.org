@@ -57,7 +57,7 @@ Some topics are too complex to be discussed at a booth. Fortunately, we have a D
 
 ![A picture of Matthew & Amandine presenting their slides. Amandine holds the microphone from Matthew. They're in front of slides spelling out "5 years from now, everyone will communicate via Matrix"](/blog/img/fosdem2024-devroom.jpg)
 
-The [Call for Proposals](https://matrix.org/blog/2024/11/fosdem-cfp/) is now closed.
+The [Call for Proposals](/blog/2024/11/fosdem-cfp/) is now closed.
 
 - 🕐️ Sunday 2, 13:00 - 17:00 CET (local time)
 - 🏢 Room K.4.201

@@ -36,7 +36,7 @@ Things were looking pretty positive by the summer of 2017: we had the server sen
 
 However, we then hit three fairly major obstacles:
 
-*   [Matrix lost its funding](https://matrix.org/blog/2017/07/07/a-call-to-arms-supporting-matrix)
+*   [Matrix lost its funding](/blog/2017/07/07/a-call-to-arms-supporting-matrix)
 *   In the ensuing uncertainty, the two lead developers (Mjark & Kegan) went to work elsewhere
 *   Meanwhile, Matrix uptake was starting to explode and Synapse was failing to scale to handle the traffic on matrix.org (and elsewhere)
 
@@ -46,7 +46,7 @@ At this point, Dendrite maintenance was in effect valiantly taken over by the co
 
 Meanwhile, it became clear that we were overdue getting Matrix itself out of beta - and the last thing we wanted to do was to split and dilute the implementation work of Matrix 1.0 over both Synapse and Dendrite - so we consciously made the decision to focus all our effort on Synapse for solving the remaining bugs and challenges.
 
-Then, in July 2019, [Matrix and Synapse exited beta](https://matrix.org/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation), and we finally started to see light at the end of the tunnel.  In October we started dusting off Dendrite again - looking to use it as a relatively simple and flexible codebase for [experimenting with Peer-to-Peer Matrix](https://youtu.be/eA0KnTt4O7E?t=1423), not least because being Go it can compile to WebAssembly and run clientside, and because even though Dendrite was originally built with massive deployments in mind, it turns out the elastic scaling means it can also scale down pretty small too—as a part of the [iOS P2P demo](http://testflight.apple.com/join/Tgh2MEk6), we’ve even ran full Dendrite homeservers on iPhones embedded into Element iOS! :)
+Then, in July 2019, [Matrix and Synapse exited beta](/blog/2019/06/11/introducing-matrix-1-0-and-the-matrix-org-foundation), and we finally started to see light at the end of the tunnel.  In October we started dusting off Dendrite again - looking to use it as a relatively simple and flexible codebase for [experimenting with Peer-to-Peer Matrix](https://youtu.be/eA0KnTt4O7E?t=1423), not least because being Go it can compile to WebAssembly and run clientside, and because even though Dendrite was originally built with massive deployments in mind, it turns out the elastic scaling means it can also scale down pretty small too—as a part of the [iOS P2P demo](http://testflight.apple.com/join/Tgh2MEk6), we’ve even ran full Dendrite homeservers on iPhones embedded into Element iOS! :)
 
 In Dec 2019, we finally got to the point where Element could fund full-time dedicated development on Dendrite once again, with Neil Alexander joining the project and focusing fulltime on getting Dendrite out of alpha and getting it working for P2P and embedded usage (adding libp2p as a federation transport, and adding SQLite support) - and in Jan 2020 we got Dendrite [successfully running clientside in a WASM service worker](https://archive.fosdem.org/2020/schedule/event/dip_p2p_matrix/) (just in time for FOSDEM!). Then, in Feb 2020, Kegan returned to the project to work fulltime on Dendrite - and the race began in earnest to get Dendrite ready for beta!
 
@@ -63,7 +63,7 @@ Throughout 2020 there’s been a huge amount of stabilisation work and polish:
     *   [Complement](https://github.com/matrix-org/complement) - our brand new Golang Matrix integration test harness
     *   [Are We Synapse Yet](https://github.com/matrix-org/dendrite/blob/master/are-we-synapse-yet.py) - an aggregator which parses sytest/complement output to compare how close Dendrite is to passing
 *   All the Matrix 1.0 work - particularly state res v2 & room version support
-*   Making it work with more P2P transports for [all the exciting P2P experiments](https://matrix.org/blog/2020/06/02/introducing-p-2-p-matrix/)
+*   Making it work with more P2P transports for [all the exciting P2P experiments](/blog/2020/06/02/introducing-p-2-p-matrix/)
 *   Supporting backfill and fetching missing events
 *   Fixing up SQLite support to make it work as a first class citizen (with shared storage code where we can!)
 *   Supporting both sending and rejecting invites (even over federation)
